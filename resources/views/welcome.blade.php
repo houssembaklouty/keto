@@ -235,7 +235,7 @@
                 <div class="col-4 px-0">
                     <div style="margin-right:-5px;" class="text-center">
                         <ul class="f32 m-0 p-0" style="height:33px;">
-                            <li class="flag tn m-0 p-0"></li>
+                            <li class="flag _European_Union m-0 p-0"></li>
                         </ul>
                     </div>
                 </div>
