@@ -67,6 +67,30 @@
                 background-image: url('images/checkout-bg.jpg'); 
             }
         }
+
+        .card-element-input-container{
+            display: flex; width: 100%; margin-bottom: 15px;
+        }
+
+        .icon-card-element{
+            padding: 10px; min-width: 40px;
+            text-align: center;
+            border-top: 1px solid #ced4da;
+            border-bottom: 1px solid #ced4da;
+            border-left: 1px solid #ced4da;
+            border-radius: .25rem;
+        }
+        
+        #card-element{
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border-top: 1px solid #ced4da;
+            border-bottom: 1px solid #ced4da; 
+            border-rigth: 1px solid #ced4da; 
+            border-left: 1px solid #ced4da;
+        }
+
     </style>
 </head>
 <body data-page-lang="en">
@@ -429,20 +453,22 @@
                     <img src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/credit-card.png" width="176" height="25" class="pl-3">
                 </div>
                 <div class="col-12 mb-2 pb-1">
-                    <div class="">
-                        <label for="">Détails de la carte</label>
+                <label for="">Détails de la carte</label>
+
+                    <div class="card-element-input-container">
+                        <i class="fa fa-lock icon-card-element"></i>
                         <div class="form-control" id="card-element"></div>
                     </div>
                 </div>
                 
 
-                <div class='col-md-6 mb-2 pb-1 select-wrap required'>
+                <div class='col-md-6 col-6 mb-2 pb-1 select-wrap required'>
                     <label>
                         <span>Date d'expiration</span>
                     </label>
                     <div class="form-control" id="card-expiry-element" class="field"></div>
                 </div>
-                <div class='col-md-6 mb-2 pb-1 select-wrap required'>
+                <div class='col-md-6 col-6 mb-2 pb-1 select-wrap required'>
                     <label>
                         <span>CVV</span>
                     </label>
@@ -598,13 +624,30 @@
         base: {
             iconColor: '#666EE8',
             // color: '#000',
-            lineHeight: '20px',
-            fontWeight: 300,
-            fontFamily: 'Poppins',
-            fontSize: '20px',
+            lineHeight: '1.5',
+            fontWeight: 400,
+            fontSize: '1.1rem',
 
             '::placeholder': {
-            color: '#989cbb',
+            color: '#6c757d',
+            },
+        },
+        invalid: {
+            border: '1px solid #ff0064',
+         },
+      };
+
+    var styleCardNumber = {
+        base: {
+            iconColor: '#666EE8',
+            // color: '#000',
+            lineHeight: '1.2',
+            fontWeight: 400,
+            // fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+            fontSize: '1.1rem',
+
+            '::placeholder': {
+            color: '#6c757d',
             },
         },
         invalid: {
@@ -616,7 +659,7 @@
     const elements = stripe.elements()
 
 
-    var cardNumberElement = elements.create('cardNumber', { style: style });
+    var cardNumberElement = elements.create('cardNumber', { style: styleCardNumber });
     cardNumberElement.mount('#card-element');
 
     var cardExpiryElement = elements.create('cardExpiry', {  style: style });
