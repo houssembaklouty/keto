@@ -131,7 +131,7 @@
         </div>
 
         <div id="product-86" data-product-id="6" data-offer-id="86" class="product">
-            <img src="{{ url('images/banners/BANNERS 6 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('images/banners/BANNERS 5 BOITES 1.png') }}" class="img-fluid" />
         </div>
         
     </div>
@@ -870,9 +870,9 @@
             }
         }
         else{
-            $('#product-86 img').attr('src', '{{ url('images/banners/BANNERS 6 BOITES 1.png') }}');
+            $('#product-86 img').attr('src', '{{ url('images/banners/BANNERS 5 BOITES 1.png') }}');
             if(offer_id == 86){
-                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 6 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 5 BOITES 2.png') }}');
             }
         }
 
