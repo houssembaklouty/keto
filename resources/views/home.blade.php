@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('styles')
+@section('third_party_stylesheets')
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
 <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -9,64 +9,96 @@
 @endsection
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    
-                    <h4>Orders List </h4> <br><br>
-
-                    <table class="table table-bordered yajra-datatable">
-                        <thead>
-                            <tr>
-                                <th>Action</th>
-                                <th>Order No</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>country</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-
+<section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Orders List</h1>
                 </div>
+                <!-- <div class="col-sm-6">
+                    <a class="btn btn-primary float-right"
+                       href=""> BTN
+                    </a>
+                </div> -->
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
+    <div class="content px-3">
 
-                <h5>Show Order</h5>
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+        <div class="clearfix"></div>
+
+            <div class="p-0">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    @if (session('status'))
+                                        <div class="alert alert-success" role="alert">
+                                            {{ session('status') }}
+                                        </div>
+                                    @endif
+                                    
+                                    <!-- <h4>Orders List </h4> <br><br> -->
+
+                                    <table class="table table-bordered yajra-datatable">
+                                        <thead>
+                                            <tr>
+                                                <th>Action</th>
+                                                <th>Order No</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>country</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <h5>Show Order</h5>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div id="model_popup"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="modal-body">
-                <div id="model_popup"></div>
-            </div>
-        </div>
     </div>
-</div>
+
+
+
+
+
 
 
 @endsection
 
-@section('scripts')
+@section('third_party_scripts')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>

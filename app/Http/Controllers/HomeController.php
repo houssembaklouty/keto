@@ -78,11 +78,13 @@ class HomeController extends Controller
                 <h6 class="float-right">Date: '.$commande->created_at.' </h6>
             </div>
             <div class="card-body">
-                <h4 class="card-title">Fullname: '.$commande->full_name.'
+                <h4 class="card-title">* Fullname: <b> '.$commande->full_name.' </b> 
 
-                <span class="float-right">Email: '.$commande->email_address.'</span>
                 
                 </h4>
+
+                <h4 class="card-title float-right">* Email: <b> '.$commande->email_address.' </b> </h4>
+
 
                 <p class="card-text">
                     <br>
