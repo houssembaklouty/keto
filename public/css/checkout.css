@@ -1,0 +1,99 @@
+.free-shipping-text-container{
+	background-color:#f8da46;
+}
+
+.approved{
+	font-size: 0.80rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+#formtop{
+	background-color: #f8da46;
+}
+
+#formbottom{
+	border-radius: 0px 0px 20px 20px;
+}
+
+.container{
+	max-width:630px;
+	background-color: rgba(255, 255, 255, 0.5);/**/
+}
+
+.border{
+	border: 2px solid #f8da46 !important
+}
+
+#promo-response-holder{
+	background-color: #A3D850;
+	color: #FFFFFF;
+}
+
+#promo-response{
+	line-height: 1.4;
+}
+
+.product-element{
+	cursor: pointer;
+}
+
+.submit-btn{
+	border: 0;
+	background: transparent;
+}
+
+.submit-btn img{
+	width: 275px;
+	max-width: 100%;
+}
+
+#btn-place-order{
+	width: 275px;
+	max-width: 100%;
+}
+
+
+.btn-shop-now {
+
+	padding: 0.6rem 2.4rem;
+	margin-bottom: 0.75rem;
+	font-size: 1.5rem;
+
+	border-radius: 0;
+	font-family: 'Gilroy';
+	color: #FFFFFF;
+	background-color: #000000;
+	border-color: #000000;
+}
+
+@media (min-width: 768px) {
+	body,
+	html{
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: auto 680px;
+	}
+
+	.approved-text{
+		font-size:1.1rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.promo-code-section,
+	.promo-code-section > .row > .col{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.promo-code-section > .row{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.submit-btn{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

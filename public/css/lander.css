@@ -1,0 +1,1019 @@
+:root {
+	--main-color: #22A4B5;
+	--dark-color: #18628F;
+}
+
+/*.row{
+	margin-left:0px ;
+	margin-right:0px ;
+}
+
+#main-header .row {
+	margin-left: -15px;
+	margin-right: -15px;
+}*/
+
+#page-nav,
+body{
+	min-width: 320px;
+	overflow-x: auto;
+}
+
+#page-nav{
+	background-color: rgba(255, 255, 255, 0.94);
+	border-bottom: 1px solid rgb(227, 235, 246, 0.94);
+}
+
+
+#page-nav .navbar-brand{
+	font-family: 'Gilroy-Black';
+	font-size: 3.4rem;
+	line-height: 1;
+}
+
+#page-nav .nav-link{
+	font-family: ''Raleway';
+	color: #000000;
+	font-size: 13.9px;
+	display: inline-block;
+}
+
+#page-nav .nav-link.active{
+	border-bottom: 4px solid #22A4B5;
+	padding-bottom: 4px;
+}
+
+#page-nav + *{
+	margin-top: 110.33px; /* height of the navbar */
+}
+
+.panel-section{
+}
+
+.order-btn{
+	color: #fff;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+.order-btn .shipping-text{
+	color:black;
+	font-size:0.7rem;
+}
+
+.order-btn .shipping-text ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	visibility: hidden;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+
+.nav-btn_color{
+	padding: 5px;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+
+.nav-btn_color:hover {
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+
+
+
+.order-btn:hover {
+	color: #fff;
+	/*background-color: #17889e;*/
+	text-decoration: none;
+}
+
+.ps-image,
+.ps-header{
+	display: inline-block;
+}
+
+.ps-header{
+	font-family: 'Futura-Bold';
+}
+
+.ps-image{
+
+}
+
+.ps-header-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 0.9;
+	margin-top: .5rem;
+	margin-bottom: 1.5rem;
+}
+
+h1.ps-header-title{
+	font-size: 2.5rem;
+}
+
+h2.ps-header-title{
+	font-size: 1.8rem;
+}
+
+.ps-header-title-line{
+	border-color: #17a2b8;
+	border-top-width: 4px;
+	width: 120px;
+	margin-top: .5rem;
+	margin-bottom: 1.5rem;
+}
+
+.ps-body{
+	font-family: ''Raleway';
+	font-size: 1.1rem;
+	line-height: 1.28;
+}
+
+.ps-body ul{
+	-webkit-padding-start: 20px;
+	-moz-padding-start: 20px;
+	padding-inline-start: 20px;
+}
+
+.ps-info-text{
+	font-family: ''Raleway';
+	font-size: 1.45rem;
+	line-height: 1.3;
+	margin-top: 1.4rem;
+}
+
+.ps-list{
+	list-style: none;
+	font-family: 'Gilroy-SemiBold';
+	font-size: 1.4rem;
+	line-height: 1.15;
+}
+
+.ps-list li::before {
+	content: '\2022';
+	font-weight: bold;
+	font-size: 132%;
+	vertical-align: middle;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.ps-bg-image{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ps-review{
+	font-family: 'Gilroy-Medium';
+	font-size: 1rem;
+}
+
+.ps-review p{
+	line-height: 1.2;
+	color: #343A40;
+}
+
+.ps-review .blockquote-footer{
+	font-size: 90%;
+}
+
+.ps-review .fa-star{
+	color: #F8DA46;
+	letter-spacing: -4px;
+}
+
+.panel-section-bg-image{
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.btn-shop-now{
+	padding: 0.6rem 4rem;
+	margin: 1rem 0px;
+	border-radius: 0;
+	font-family: ''Raleway';
+	font-size: 1.4rem;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-color: #000000;
+	box-shadow: -3px 3px 18px 0px rgba(0,0,0,0.42);
+}
+
+.btn-shop-now:hover{
+	background-color: #23272B;
+	border-color: #1D2124;
+}
+
+.btn-shop-now:not(:disabled):not(.disabled).active,
+.btn-shop-now:not(:disabled):not(.disabled):active,
+.show > .btn-shop-now.dropdown-toggle{
+	background-color: #1D2124;
+	border-color: #171A1D;
+}
+
+#main-header .mh-part-1 .mh-title-1{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.1;
+}
+
+#main-header .mh-part-1 .btn-shop-now{
+	padding: 0.6rem 2.4rem;
+	margin-bottom: 0.75rem;
+	font-size: 1.5rem;
+}
+
+#main-header .mh-part-1 .mh-money-back-guarantee-label{
+	font-family: ''Raleway';
+	font-size: 1.2rem;
+	color: var(--main-color);
+}
+
+#main-header .mh-title-2{
+	font-family: 'Raleway', sans-serif;
+	color: #f26c4f;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+#main-header .mh-part-2 .mh-list{
+	list-style: none;
+	font-family: ''Raleway';
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+#main-header .mh-part-2 .mh-list li{
+	color: #707070;
+}
+#main-header .mh-part-2 .mh-list li::before {
+	content: '';
+	color: #707070;
+	display: inline-block;
+	height: 3rem;
+	width: 3rem;
+	margin-right: .5rem;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#main-header .mh-icons .mh-i-icons{
+	max-width: 100%;
+	font-weight: bold;
+	line-height: 1.1;
+	color: var(--main-color);
+}
+
+#main-header .mh-icons .mh-i-icons img{
+	width: 90%;
+	height: auto;
+}
+
+#main-header #seals-mobile img {
+	max-width: 57px;
+}
+
+#main-header .mh-icons .mh-i-nutritional img{}
+
+section .color-box{
+	background-color: var(--dark-color);
+	color:white;
+	font-size:1.5rem;
+}
+
+section .color-box h2{
+	font-size: 2.5rem !important;
+}
+section .color-box .fas {
+	color: #EC7153;
+}
+
+
+
+
+#panel-bhb-diagram{
+	background-color: #FFFFFF;
+}
+
+#panel-customer-reviews{
+	background-color: #FFFFFF;
+}
+
+.panel-light {
+	background: rgba(94, 191, 187, 0.7);
+}
+
+.panel-medium{
+	background: rgba(97, 162, 187, 0.7);
+}
+
+.panel-dark{
+	background: rgba(77, 123, 155, 0.7);
+}
+
+
+
+#panel-why-keto-works{
+	background-color: #FFFFFF;
+}
+
+#panel-how-keto-works{
+	margin-top: 1rem;
+	background-color: #FFFFFF;
+}
+
+#panel-how-keto-works .box h1{
+	color: white;
+	font-size: 5rem;
+}
+
+#panel-how-keto-works .box p{
+	color: white;
+}
+
+#panel-how-it-works{
+	background-color: #FFFFFF;
+}
+
+#panel-how-it-works .ps-info-text{
+	color: #56A5A9;
+}
+
+#panel-ingredient-green-tea{
+	background-color: #F19D3D;
+}
+
+#panel-ingredient-garcinia-combogia{
+	background-color: #C0472C;
+}
+
+#panel-ingredient-green-coffee-extract{
+	background-color: #56A5A9;
+}
+
+#panel-what-is-bhb .ps-header-title{
+	color: #56A5A9;
+}
+
+
+
+#panel-where-to-start{
+	background-color: #FFFFFF;
+}
+
+#panel-quality-guarantee{
+	background-color: #265e85;
+}
+
+#panel-money-back-guarantee{
+	background-color: #FFFFFF;
+}
+
+
+#main-footer{
+	background-color: #000000;
+	font-family: ''Raleway';
+	font-size: 12px;
+	line-height: 1.3;
+}
+
+
+.ps-body p {
+	font-family: 'Gilroy';
+}
+
+.row.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* //vitamina angels */
+.vitangel-bg{
+	background-color: black;
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+
+.vitangel{
+	padding-top: 121px;
+	color: white;
+	font-size: 1em;
+}
+
+.vitangel h2{
+	font-size: 3em;
+}
+
+.vitangel p {
+	font-size: 1.3em;
+}
+
+.text-you-save-red{
+	color: #F24A3D;
+}
+
+.footer-phone-table{
+	width: auto;
+}
+
+.bottle-img-special{
+	height: auto;
+	max-width: 100%;
+}
+
+.bottle-img-special-1{
+	width: 112px;
+}
+
+.bottle-img-special-2{
+	width: 128px;
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#page-nav .navbar-brand{
+		font-size: 4.2rem;
+	}
+
+	/*#page-nav + *{
+		margin-top: 94px;
+	}*/
+
+	.ps-header-title{
+		line-height: 1;
+	}
+
+	h1.ps-header-title{
+		font-size: 3rem;
+	}
+
+	h2.ps-header-title{
+		font-size: 2.2rem;
+	}
+
+	.ps-body{
+		font-size: 1.3rem;
+		line-height: 1.35;
+	}
+
+	.ps-info-text{
+		font-size: 1.8rem;
+		line-height: 1.4;
+		margin-top: 2rem;
+	}
+
+	.ps-list{
+		font-size: 1.7rem;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 360px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(odd) .container{
+		padding-right: 50px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(even) .container{
+		padding-left: 50px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(odd) .container{
+		margin-right: 0;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(even) .container{
+		margin-left: 0;
+	}
+
+	.panel-section-bg-image{
+		height: 400px;
+	}
+
+	.ps-body p{
+		margin-bottom: 2rem;
+	}
+
+	.ps-list{
+		line-height: 1.5;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 470px;
+	}
+
+	.panel-section-bg-image{
+		height: 600px;
+	}
+
+	#page-nav > .container,
+	#page-nav > .container-fluid {
+		align-items: baseline;
+	}
+
+	#page-nav.navbar-expand-lg .navbar-nav .nav-link{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+
+	.ps-image{
+		max-height: 360px;
+	}
+
+	#panel-where-to-start .ps-image{
+		max-height: 490px;
+	}
+
+	#panel-money-back-guarantee .ps-image{
+		max-height: 100px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 570px;
+	}
+
+	.panel-section-bg-image{
+		height: 780px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	/*#main-header > .container{
+		max-width: 100%;
+	}*/
+
+	#main-header .mh-part-1 .mh-title-1,
+	#main-header .mh-part-2 .mh-title-2{
+		font-size: 2.4rem;
+		line-height: 1.1;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.3rem;
+		line-height: 1.1;
+	}
+	/*section.container {
+        max-width: 100%;
+    }*/
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.main-header-container-patch{
+		max-width: 100%;
+	}
+
+	/*#main-header > .container{
+		max-width: 100%;
+	}
+
+		section.container {
+			max-width: 100%;
+		}*/
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 2rem;
+		line-height: 1;
+	}
+
+	#main-header .mh-part-2 .mh-title-2{
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.26rem;
+		line-height: 1.4;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.96rem;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1.26rem;
+		width: 1.26rem;
+	}
+
+	#main-header .mh-icons .mh-i-icons{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px){
+	#main-header .mh-part-1:before {
+		content: '';
+		vertical-align: middle;
+		display: inline-block;
+		width: 308px;
+		height: 292px;
+		left: -80px;
+		position: absolute;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+
+/* Hack because the site was designed this way... */
+@media (min-width: 576px) and (max-width: 991px){
+	.container-patch{
+		max-width: 100%;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.ps-image{
+		max-height: 170px;
+		padding-bottom: 10px;
+	}
+	.vitangel-bg {
+		background-color: black;
+		background-position: top right;
+		background-size: 101%;
+		height: 500px;
+	}
+
+	.vitangel {
+		height: 320px;
+		padding-top: 0px;
+
+	}
+
+	.vitangel h2 {
+		font-size: 2.1em;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.3rem;
+		line-height: 1.5;
+		display: inline-block;
+		-webkit-padding-start: 5px;
+		-moz-padding-start: 5px;
+		padding-inline-start: 5px;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1.3rem;
+		width: 1.3rem;
+		margin-right: 0.7rem;
+	}
+	section .color-box {
+		font-size: 1.4rem;
+	}
+
+	section .color-box h2 {
+		font-size: 1.8rem !important;
+	}
+	.vitangel-bg {
+		background-color:black;
+		background-position: top right;
+		background-size: 101%;
+		height: auto;
+	}
+	.vitangel {
+		height: 320px;
+		padding-right: 25%;
+		padding-top: 0px;
+
+	}
+
+	.vitangel h2 {
+		font-size: 2em;
+	}
+
+	.vitangel p {
+		font-size: 1em;
+	}
+
+}
+
+/*----------------------------------------------------------------------/**/
+@media (max-width: 575px) {
+	#main-header .mh-part-1{
+		margin-bottom: 0!important;
+	}
+
+	#main-header .mh-part-2{
+		padding-top: 15px !important;
+	}
+
+	#main-header .mh-part-1:before {
+		width: 308px;
+		height: 292px;
+		left: -80px;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 1.5rem;
+		line-height: 1.1;
+		margin-top: 20px;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		margin-bottom: 0.36rem;
+		font-size: 1.3rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.9rem;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.2rem;
+		line-height: 1.4;
+		display: inline-block;
+		-webkit-padding-start: 0px;
+		-moz-padding-start: 0px;
+		padding-inline-start: 0px;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 2.3rem;
+		width: 2.3rem;
+		margin-right: 0.5rem;
+	}
+
+	/*.mh-icons-smallest .mh-i-certifications{
+		padding-left: 0;
+	}*/
+
+	#main-header .mh-icons-smallest{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	#main-header .mh-icons-smallest .mh-i-certifications img{
+		max-width: 52px;
+	}
+
+	section .color-box {
+		font-size: 1.4rem;
+	}
+
+	section .color-box h2 {
+		font-size: 1.7rem !important;
+	}
+	.vitangel {
+		height: 330px;
+		padding-top: 0px;
+		padding-right: 0%;
+
+	}
+
+	.vitangel-bg {
+		background: black;
+		height: auto;
+	}
+
+	.vitangel h2 {
+		font-size: 2em;
+	}
+
+	.vitangel p {
+		font-size: 1em;
+	}
+
+}
+
+
+@media (max-width: 500px) {
+	.nav-b h3 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
+@media (max-width: 444px) {
+	section .color-box {
+		font-size: 1.2rem;
+	}
+
+	section .color-box h2 {
+		font-size: 1.7rem !important;
+	}
+
+	.vitangel {
+		height: 330px;
+		padding-top: 0px;
+
+	}
+
+	.vitangel-bg {
+		background: black;
+		height: auto;
+	}
+
+	.vitangel h2 {
+		font-size: 2em;
+	}
+
+	.vitangel p {
+		font-size: 1em;
+	}
+}
+
+
+@media (max-width: 413px) {
+	#main-header .mh-part-1{
+		margin-bottom: 10px !important;
+		padding-right: 10px;
+	}
+
+	#main-header .mh-part-2{
+		padding-top: 0 !important;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 1.2rem;
+		line-height: 1;
+		margin-bottom: 4px;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		padding: 0.6rem 1.3rem;
+		font-size: 1.08rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.75rem;
+		line-height: 1.3;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.mh-list-holder{
+		padding-right: 0;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		/* margin-top: 3.5rem !important; */
+		font-size: 1.1rem;
+		line-height: 1.4;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 2rem;
+		width: 2rem;
+	}
+	section .color-box {
+		font-size: .9rem;
+	}
+
+	section .color-box h2 {
+		font-size: 1.7rem !important;
+	}
+
+	.vitangel {
+		height: 330px;
+		padding-top: 0px;
+
+	}
+
+	.vitangel-bg {
+		background: black;
+		height: auto;
+	}
+
+	.vitangel h2 {
+		font-size: 2em;
+	}
+
+	.vitangel p {
+		font-size: 1em;
+	}
+}
+
+
+@media (max-width: 374px) {
+	#navbtn{
+		width: 100px;
+	}
+
+	#order_now{
+		width: 116px !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	#main-header .mh-part-1{
+		margin-bottom: 0 !important;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: 1;
+		margin-bottom: 0;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		padding: 0.56rem 1.2rem;
+		font-size: 1.1rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.73rem;
+		line-height: 1.3;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.mh-list-holder{
+		padding-right: 0;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		margin-top: .5rem !important;
+		font-size: 1.1rem;
+		line-height: 1.4;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 2rem;
+		width: 2rem;
+		margin-right: 0.4rem;
+	}
+
+	section .color-box {
+		font-size:.9rem;
+	}
+
+	section .color-box h2 {
+		font-size: 1.7rem !important;
+	}
+
+	.vitangel {
+		height: 330px;
+		padding-top:0px;
+
+	}
+	.vitangel-bg{
+		background:black;
+		height: auto;
+	}
+	.vitangel h2{
+		font-size: 2em;
+	}
+	.vitangel p {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 340px) {
+	#page-nav .navbar-brand{
+		margin-right: 0;
+	}
+}
