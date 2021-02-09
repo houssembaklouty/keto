@@ -19,7 +19,6 @@ use Carbon\Carbon;
 class StripeController extends Controller
 {
 
-    
     public function checkout_page() {
         
         $random = Str::uuid();
@@ -54,11 +53,19 @@ class StripeController extends Controller
 
         $planStripe_id = '';
 
-        if($product == '79') { $product = 'BANNERS 1';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
-        if($product == '81') { $product = 'BANNERS 2';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
-        if($product == '83') { $product = 'BANNERS 3';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
-        if($product == '84') { $product = 'BANNERS 4';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
-        if($product == '86') { $product = 'BANNERS 6';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+        /*
+            if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
+            if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
+            if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+            if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+            if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+        */
+
+        if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IFLHXEzLd74QBPdOUpUm6uR'; }
+        if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IFLJrEzLd74QBPdt9BO4QkV'; }
+        if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IIvUJEzLd74QBPdPA4AARVK'; }
+        if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IIvYXEzLd74QBPdRro6pbjc'; }
+        if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IIvcrEzLd74QBPdCSLh2c97'; }
         
         $random = Str::uuid();
         
@@ -106,6 +113,7 @@ class StripeController extends Controller
             'email_address' => $request->email_address,
             'first_name' => $request->user_shipping_fname,
             'last_name' => $request->user_shipping_lname,
+            'termes_conditions' => $request->termes_conditions == 'on' ? true : false ,
             'phone_number' => $request->phone_number,
             'products' => $product,
             'city' => $request->state,
@@ -116,6 +124,20 @@ class StripeController extends Controller
         ]);
 
         return $commande;
+    }
+
+    public function cancelSubscription(Request $request) {
+
+        $commande = Commande::where('ref', $request->ref)->with(['user.subscriptions'])->first();
+
+        $subscription_id = $commande->user->subscriptions->first()->stripe_id;
+
+        $stripe = Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+        
+        $sub = \Stripe\Subscription::retrieve($subscription_id);
+        $sub->cancel();
+        
+        return back();
     }
 
 }

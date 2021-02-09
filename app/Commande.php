@@ -16,6 +16,7 @@ class Commande extends Model
         'products', 
         'user_id',
         'city',
+        'termes_conditions',
         'zip_codel',
         'paiement',
         'ref',

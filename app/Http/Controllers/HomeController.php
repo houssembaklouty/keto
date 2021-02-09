@@ -40,10 +40,16 @@ class HomeController extends Controller
 
             $data = Commande::latest()->get();
 
+            $deleteRoute = route('cancel.subscription');
+            $deleteMethodField = method_field('DELETE');
+            $csrfToken = csrf_field();
+
             return Datatables::of($data)
                 ->addIndexColumn()
-                ->addColumn('action', function($row){
-                    $actionBtn = '<a href="javascript:void(0)" onClick="ShowModal(this)" data-id="'.$row['ref'].'" class="edit btn btn-success btn-sm">MORE</a>';
+                ->addColumn('action', function($row) use($deleteRoute, $deleteMethodField, $csrfToken){
+                    $actionBtn = '<a href="javascript:void(0)" onClick="ShowModal(this)" data-id="'.$row['ref'].'" class="edit btn btn-sm btn-success"> <i class="fa fa-info-circle"></i> MORE</a>'.
+                    '<form class="mt-1" method="POST" action="'.$deleteRoute.'?ref='.$row['ref'].'"> '.$deleteMethodField.' '.$csrfToken.' <div class="form-group"> <button type="submit" class="btn btn-sm btn-danger" onclick="return ConfirmDelete()""> <i class="fa fa-close"></i> Cancel </button> </div> </form>'
+                    ;
                     return $actionBtn;
                 })
                 ->rawColumns(['action'])

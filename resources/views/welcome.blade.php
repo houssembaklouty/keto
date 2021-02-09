@@ -80,10 +80,6 @@
             background-image: url('images/icon_feature_face_hands.svg');
         }
 
-        /* #panel-bg-bonding {
-            background-image: url('https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/panel_bg_bonding.jpg');
-        } */
-
         #panel-proven-results {
             background: linear-gradient(rgba(94, 191, 187, 0.7), rgba(94, 191, 187, 0.7)),
             url('images/panel_proven_results_bg.jpg') center/auto 150% no-repeat;
@@ -104,32 +100,15 @@
             url('images/panel_keto_for_you_bg.jpg') center/auto 150% no-repeat;
         }
 
-        /* #panel-bg-confident {
-            background-image: url('https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/panel_bg_confident.jpg');
-        } 
-
-        #panel-bg-be-active {
-            background-image: url('https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/panel_bg_girl.jpg');
-        } */
-
         #panel-what-is-bhb {
             background: url('images/panel_why_is_bhb_bg.jpg') no-repeat;
             background-size: cover;
         }
 
-        /* #panel-bg-be-happy {
-            background-image: url('https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/panel_bg_happy.jpg');
-        } */
-
         #panel-about-us {
             background: linear-gradient(rgba(38, 94, 133, 0.7), rgba(38, 94, 133, 0.7)),
             url('images/panel_bg_about_us.jpg') center/auto 150% no-repeat;
         }
-
-        /* .vitangel-bg {
-            background-image: url('https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/vita_angels.jpg');
-        } */
-
 
         .toast-header {
             color: #fff!important;
@@ -309,10 +288,10 @@
                                     <img src="images/icon_gmp.svg" alt="GMP certified">
                                 </div>
                                 <div class="col pr-2">
-                                    <img src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/icon_iso_9001.svg" alt="ISO 9001">
+                                    <img src="{{ asset('images/icon_iso_9001.svg') }}" alt="ISO 9001">
                                 </div>
                                 <div class="col pr-2">
-                                    <img src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/icon_fssai.svg" alt="FSSAI">
+                                    <img src="{{ asset('images/icon_fssai.svg') }}" alt="FSSAI">
                                 </div>
                             </div>
                         </div>

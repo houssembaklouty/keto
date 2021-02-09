@@ -23,6 +23,7 @@ class CreateCommandesTable extends Migration
             $table->text('address');
             $table->string('country');
             $table->string('city');
+            $table->boolean('termes_conditions')->default(0);
             $table->integer('user_id')->nullable();
             $table->string('zip_codel')->nullable();
             $table->string('paiement')->nullable();

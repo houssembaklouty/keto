@@ -91,6 +91,15 @@
             border-left: 1px solid #ced4da;
         }
 
+        .credit-card__text {
+            display: block;
+            margin: 10px 0 10px;
+            color: #6c757d;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
     </style>
 </head>
 <body data-page-lang="en">
@@ -450,7 +459,7 @@
                 <div class="col-12 mb-2 pb-1 pt-0 pt-md-3">
                     <h6>Payer par carte de crédit ou de débit</h6>
                     <span class="cstm-10">Nous acceptons</span>
-                    <img src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/credit-card.png" width="176" height="25" class="pl-3">
+                    <img src="{{ asset('images/credit-card.png') }}" width="176" height="25" class="pl-3">
                 </div>
                 <div class="col-12 mb-2 pb-1">
                 <label for="">Détails de la carte</label>
@@ -487,6 +496,13 @@
                         <strong style="font-family:'raleway';font-size:1.3rem">COMMANDER</strong><br>
                         <span style="font-size:1rem;">Recevez Votre Commande</span>
                         </button>
+
+                        <div class="credit-card__text">
+
+                        <input type="checkbox" id="scales" name="termes_conditions" checked>
+                            En cliquant sur le bouton ci-dessus, vous acceptez les termes et conditions et la politique de confidentialité de cette offre. Renouvellement automatique après 30 jours et tous les mois jusqu'à annulation.
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -500,10 +516,10 @@
 <section class="my-4 container" >
     <div class="row">
         <div class="col-12 col-sm-6 align-top">
-            <img src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/images/privacy.png" class="img-fluid" />
+            <img src="{{ asset('/images/privacy.png') }}" class="img-fluid" />
         </div>
         <div class="col-8 col-sm-6 pt-3 pt-sm-0 align-top">
-            <img src="https://ketoweightloss.shop/images/partenaires.png" class="img-fluid" />
+            <img src="{{ asset('/images/partenaires.png') }}" class="img-fluid" />
         </div>
     </div>
 

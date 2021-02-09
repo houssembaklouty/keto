@@ -30,6 +30,9 @@ Route::get('orders/show', 'HomeController@orderShow')->name('orders.show');
 
 Route::post('/checkout', 'StripeController@storePay')->name('pay.checkout');
 
+
+Route::delete('cancel', 'StripeController@cancelSubscription')->name('cancel.subscription');
+
 // Route::get('/stripe-payment', 'StripeController@handleGet');
 // Route::post('/stripe-payment', 'StripeController@handlePost')->name('stripe.payment');
 
