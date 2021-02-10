@@ -50,6 +50,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Action</th>
+                                                <th>#</th>
                                                 <th>Order No</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
@@ -137,6 +138,7 @@
         ajax: "{{ route('orders.list') }}",
         columns: [
             {data: 'action', name: 'action', orderable: true, searchable: true},
+            {data: 'id', name: 'id'},
             {data: 'ref', name: 'ref'},
             {data: 'full_name', name: 'full_name'},
             {data: 'email_address', name: 'email_address'},

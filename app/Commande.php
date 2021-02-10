@@ -22,11 +22,16 @@ class Commande extends Model
         'ref',
     ];
 
-    protected $appends = ['full_name'];
+    protected $appends = ['full_name', 'termes'];
 
     public function getFullNameAttribute()
     {
         return $this->first_name.' '.$this->last_name;
+    }
+
+    public function getTermesAttribute()
+    {
+        return $this->termes_conditions == 1 ? 'Oui' : 'Non' ;
     }
 
     public function user()

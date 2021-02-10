@@ -104,6 +104,7 @@ class HomeController extends Controller
                                     <th scope="col">city</th>
                                     <th scope="col">country</th>
                                     <th scope="col">zip_codel</th>
+                                    <th scope="col">termes</th>
                                 </tr>
                             </thead>
 
@@ -115,6 +116,7 @@ class HomeController extends Controller
                                     <td>'.$commande->city.'</td>
                                     <td>'.$commande->country.'</td>
                                     <td>'.$commande->zip_codel.'</td>
+                                    <td>'.$commande->termes.'</td>
                                 </tr>
                     
                             </tbody>

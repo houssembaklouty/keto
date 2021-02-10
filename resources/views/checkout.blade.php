@@ -99,7 +99,21 @@
             font-weight: 400;
             line-height: 1.3;
         }
+        
+        .checktest {padding: 20px 0; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto;}
+        .checktest + .checktest + .checktest {border-top: 1px solid #dadada;}
+        .labelcheckbox {display: flex; align-items: center; cursor: pointer;}
 
+        .vh {position: absolute !important; clip: rect(1px, 1px, 1px, 1px); padding: 0 !important; border: 0 !important; height: 1px !important; width: 1px !important; overflow: hidden;}
+
+        .labelcheckbox:before {margin-bottom:.7em; content: ''; width: 25px; height: 15px; background: #f2f2f2; border: 1px solid rgba(75, 101, 132, 0.3); display: inline-block; margin-right: 5px;}
+
+        input[type="checkbox"]:checked ~ .labelcheckbox:before {background: #ccc no-repeat center; background-size: 9px 12px; background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ1LjcwMSA0NS43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NS43MDEgNDUuNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMC42ODcsMzguMzMyYy0yLjA3MiwyLjA3Mi01LjQzNCwyLjA3Mi03LjUwNSwwTDEuNTU0LDI2LjcwNGMtMi4wNzItMi4wNzEtMi4wNzItNS40MzMsMC03LjUwNCAgICBjMi4wNzEtMi4wNzIsNS40MzMtMi4wNzIsNy41MDUsMGw2LjkyOCw2LjkyN2MwLjUyMywwLjUyMiwxLjM3MiwwLjUyMiwxLjg5NiwwTDM2LjY0Miw3LjM2OGMyLjA3MS0yLjA3Miw1LjQzMy0yLjA3Miw3LjUwNSwwICAgIGMwLjk5NSwwLjk5NSwxLjU1NCwyLjM0NSwxLjU1NCwzLjc1MmMwLDEuNDA3LTAuNTU5LDIuNzU3LTEuNTU0LDMuNzUyTDIwLjY4NywzOC4zMzJ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);}
+
+        input[type="checkbox"]:focus ~ .labelcheckbox {}
+
+
+        @media screen and (max-width: 450px) {  .labelcheckbox:before {width: 4.9em;} }
     </style>
 </head>
 <body data-page-lang="en">
@@ -492,15 +506,23 @@
                 </div>
                 <div class="col-12 pt-0 pt-md-3">
                     <div class="col-12 text-center px-0">
-                        <button id="card-button" data-secret="{{ $intent->client_secret }}" type="submit" class="submit-btn cstm-12 btn btn-dark btn-lg btn-shop-now mt-2" style="line-height:1;width:275px;">
-                        <strong style="font-family:'raleway';font-size:1.3rem">COMMANDER</strong><br>
+                        <button id="card-button" data-secret="{{ $intent->client_secret }}" type="submit" class="submit-btn cstm-12 btn btn-dark btn-lg btn-shop-now mt-2" style="line-height:1;width:325px;">
+                        <strong style="font-family:'raleway';font-size:1.7rem">COMMANDER</strong><br>
                         <span style="font-size:1rem;">Recevez Votre Commande</span>
                         </button>
 
                         <div class="credit-card__text">
 
-                        <input type="checkbox" id="scales" name="termes_conditions" checked>
-                            En cliquant sur le bouton ci-dessus, vous acceptez les termes et conditions et la politique de confidentialité de cette offre. Renouvellement automatique après 30 jours et tous les mois jusqu'à annulation.
+                            <div class="checktest">
+                                <input type="checkbox" id="termes_conditions" class="vh" name="termes_conditions" checked>
+                                <label class="labelcheckbox" for="termes_conditions">
+                                En cliquant sur le bouton ci-dessus, vous acceptez les termes et conditions et la politique de confidentialité de cette offre. Renouvellement automatique après 30 jours et tous les mois jusqu'à annulation.
+                                </label>
+                            </div>
+                            
+                            <!-- 
+                            <input type="checkbox" id="scales" name="termes_conditions" checked>
+                                En cliquant sur le bouton ci-dessus, vous acceptez les termes et conditions et la politique de confidentialité de cette offre. Renouvellement automatique après 30 jours et tous les mois jusqu'à annulation. -->
                         </div>
 
                     </div>

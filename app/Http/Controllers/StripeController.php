@@ -53,19 +53,22 @@ class StripeController extends Controller
 
         $planStripe_id = '';
 
+        if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
+        if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
+        if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+        if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+        if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
+
         /*
-            if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
-            if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
-            if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
-            if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
-            if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1ICnvPAmEXvMDqamnSEKJfnj'; }
-        */
 
         if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IFLHXEzLd74QBPdOUpUm6uR'; }
         if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IFLJrEzLd74QBPdt9BO4QkV'; }
         if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IIvUJEzLd74QBPdPA4AARVK'; }
         if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IIvYXEzLd74QBPdRro6pbjc'; }
         if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IIvcrEzLd74QBPdCSLh2c97'; }
+
+        */
+
         
         $random = Str::uuid();
         
@@ -79,7 +82,7 @@ class StripeController extends Controller
             'name' => $request->user_shipping_fname,
             'lastname' => $request->user_shipping_lname,
             'country' => $request->country,
-            'zip_code' => $request->user_shipping_zip,
+            'zip_code' => $request->zip_code,
             'email' => $request->email_address ?? $random.'@mail.com',
             'password' => bcrypt($random)
         ]);
@@ -96,7 +99,6 @@ class StripeController extends Controller
         } catch (\Exception $e) {
             return back()->withErrors(['message' => 'Error creating subscription. ' . $e->getMessage()]);
         }
-       
         
         // $user->ends_at = Carbon::now()->addMonths(1);
 
@@ -118,7 +120,7 @@ class StripeController extends Controller
             'products' => $product,
             'city' => $request->state,
             'user_id' => $userId,
-            'zip_codel' => $request->zip_codel,
+            'zip_codel' => $request->zip_code,
             'paiement' => $request->paiement,
             'ref' => uniqid(),
         ]);
