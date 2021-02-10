@@ -53,21 +53,23 @@ class StripeController extends Controller
 
         $planStripe_id = '';
 
-        /*
 
         if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IJETqEzLd74QBPdhCf3cOxy'; }
         if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IJHdFEzLd74QBPd531159Rs'; }
         if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IJHdFEzLd74QBPd3NjyyJCL'; }
         if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IJHdFEzLd74QBPdEbQuOgd7'; }
         if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IJHdFEzLd74QBPdgu9N0bon'; }
-        */
 
+        /*
 
         if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
         if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
         if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IJEUjEzLd74QBPdey38mhpu'; }
         if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IJEVHEzLd74QBPdxBXrKVmU'; }
         if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IJEVxEzLd74QBPdH7eN6izi'; }
+
+        */
+
 
         $random = Str::uuid();
         
