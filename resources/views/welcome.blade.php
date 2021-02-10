@@ -200,7 +200,7 @@
 <nav id="page-nav" class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand" href="./">
-            <img src="images/logo.png" alt="KETO Weight Loss US Shop logo" width="70px"></a>
+            <img src="/images/logo.png" alt="KETO Weight Loss US Shop logo" width="70px"></a>
 
         <a id="order_now" href="checkout.html" class="order-btn
 		font-weight-bold px-4 flex-column" role="button" style="display:none;width:160px;">

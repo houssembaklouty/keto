@@ -1,138 +1,270 @@
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Confirmation de commande - Keto Produit de Perte de poids rapide en Tunisie</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-
-    <!-- Meta Tags -->
-    <meta name="language" content="french">
-    <meta name="copyright" content="HOUSSEM BAKLOUTI">
-    <meta name="description" content="">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ url('images/favicon/favicon.ico') }}"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
-
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-K29LJKX"></script>
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{ url('css/defaults.css') }}">
-    <link rel="stylesheet" href="{{ url('css/global.css') }}">
-    <link rel="stylesheet" href="{{ url('css/font-gilroy.min.css') }}">
-    <link rel="stylesheet" href="{{ url('css/futura/font-futura.min.css') }}">
-    <link rel="stylesheet" href="{{ url('css/checkout.css') }}">
-    
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-K29LJKX"></script>
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="{{ url('css/holdon.min.css') }}">
-    
-    <style type="text/css">
-        .error{ color:#ff0000d9; }
-        @media (min-width: 768px) {
-            body,
-            html{
-                background:url('images/checkout-bg.jpg') top center;
-                background-size:contain;
-                background-repeat:no-repeat;
-            }
-        }
-        @media (min-width: 768px) {
-            body,
-            html{
-                background-image: url('images/checkout-bg.jpg');
-            }
-        }
-    </style>
-</head>
-<body data-page-lang="en">
-
-<section class="container">
-    <div class="row h-100 pt-2">
-        <div class="col-12 my-auto">
-            <img src="{{ url('images/logo.png') }}" width="200px" class="img-fluid" style="margin-left: auto; margin-right: auto; display: block;" />
-        </div>
-    </div>
-
-    <div class="row mt-2 py-2 cstm-2">
-        <div class="col-12 text-left my-auto text-center pl-0" >
-            <h1 style=>
-                Merci !
-            </h1>
-            
-            <h3>
-                <img src="{{ url('images/checkmark.png') }}" width="20"/>
-                <span class="text-black approved approved-text">
-                    Votre commande est déjà confirmée.
-            </h3>
-            
-            <h5 class="mh-title mb-md-3 mb-lg-5">
-                Délai moyen de la livraison de votre commande est  de 24 à 48 heures. <br>
-                Pour plus de renseignements, veuillez nous contacter par tél. sur le (+216) 29 88 00 03 <br>
-                ou par email: <a href="mailto:ketoweightloss.shop@gmail.com">support@ketoweightloss.shop*</a>
-            </h5>
-            
-            <a href="/" 
-                class="btn btn-dark btn-lg btn-shop-now text-uppercase" 
-                role="button">Retour vers la page d'accueil 
-            </a>
-
-            </span>
-            <br>
-        </div>
-    </div>
-</section>
-
-<!-- Plugins -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/js/bootstrap.min.js"></script>
-
-<script src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/js/jquery.validate.min.js"></script>
-<script src="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/js/holdon.min.js"></script>
-<link href="https://d1e47dkdjztx7r.cloudfront.net/assets/nk/fr/css/holdon.min.css" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0D6T4KEWD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V0D6T4KEWD');
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-183045346-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-183045346-1');
-</script>
-</body>
-</html>
+<div bgcolor="#f4f4f4" width="100%" style="margin:0;padding:0" class="__web-inspector-hide-shortcut__">
+   <div class="adM">
+   </div>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#2abebc" style="width:580px">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td style="padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:30px">
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" style="text-align:center">
+                              <tbody>
+                                 <tr style="font-size:0">
+                                    <th class="m_5327504558924647655columns m_5327504558924647655full" valign="middle" bgcolor="transparent" style="text-align:left;word-wrap:break-word;word-break:normal;display:inline-block;min-width:214px;max-width:100%;width:40%;min-width:-webkit-calc(40%);min-width:calc(40%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 48000%)">
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left"><a href="{{ config('app.url') }}" rel="noopener noreferrer" style="text-decoration:none" target="_blank" data-saferedirecturl=""><img id="m_5327504558924647655OWATemporaryImageDivContainer1" src="{{ url('images/logo.png') }}" alt="" border="0" width="174" style="max-width:80px;display:block;width:174px;float:left;border-radius: 50%;" class="CToWUd"></a></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </th>
+                                    <th class="m_5327504558924647655columns m_5327504558924647655full" valign="middle" style="text-align:center;display:inline-block;min-width:321px;max-width:100%;width:60%;min-width:-webkit-calc(60%);min-width:calc(60%);width:-webkit-calc(230400px - 48000%);width:calc(230400px - 48000%)">
+                                       <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                                          <tbody>
+                                             <tr>
+                                                <td bgcolor="transparent" style="word-wrap:break-word;word-break:normal;width:100%;padding-top:0px;padding-right:30px;padding-bottom:0px;padding-left:0px">
+                                                   <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%">
+                                                      <tbody>
+                                                         <tr>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </th>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#ffffff" style="width:580px">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding-top:35px;padding-right:0px;padding-left:0px;text-align:left">
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                              <tbody>
+                                 <tr>
+                                    <td bgcolor="transparent" style="word-wrap:break-word;word-break:normal;padding-top:0px;padding-right:56px;padding-bottom:0px;padding-left:56px">
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="display:table">
+                                          <tbody>
+                                             <tr>
+                                                <td style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;width:100%;text-align:left">
+                                                   <h1 style="font-family:Arial;font-size:36px;color:#00185e;word-wrap:break-word;word-break:normal;font-style:normal;line-height:45px;font-weight:normal">Validation de votre commande {{ request()->route('id') }}</h1>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#ffffff" style="width:580px">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding-top:0px;padding-right:56px;padding-bottom:20px;padding-left:56px;text-align:left">
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                              <tbody>
+                                 <tr>
+                                    <td bgcolor="transparent" style="word-wrap:break-word;word-break:normal">
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="display:table">
+                                          <tbody>
+                                             <tr>
+                                                <td style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;width:100%;text-align:left">
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px">Bonjour,</p>
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px">Nous avons le plaisir de vous confirmer la validation de votre commande {{ request()->route('id') }}.</p>
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px">Celle-ci vous sera livrée dans les meilleurs délais et vous recevrez un e-mail dès qu'elle sera disponible.</p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#ffffff" style="width:580px">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding-top:0px;padding-right:92px;padding-bottom:0px;padding-left:92px;text-align:left">
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                              <tbody>
+                                 <tr>
+                                    <td bgcolor="#def8ff" style="word-wrap:break-word;word-break:normal;width:100%;padding:26px">
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="display:table">
+                                          <tbody>
+                                             <tr>
+                                                <td style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;width:100%;text-align:left">
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:15px">
+                                                    Merci pour votre achat et la confiance que vous nous accordez.
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="center">
+                                                   <table cellpadding="0" cellspacing="0" border="0" role="presentation" class="m_5327504558924647655btn_table" style="display:table">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td class="m_5327504558924647655btn_td" bgcolor="#2abebc" style="font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block">
+                                                                <a href="/" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" target="_blank" data-saferedirecturl="#">
+                                                                    Retour vers la page d'accueil
+                                                                </a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#ffffff" style="width:580px">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;text-align:left">
+                           <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                              <tbody>
+                                 <tr>
+                                    <td bgcolor="transparent" style="word-wrap:break-word;word-break:normal;padding-top:0px;padding-right:56px;padding-bottom:0px;padding-left:56px">
+                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="display:table">
+                                          <tbody>
+                                             <tr>
+                                                <td style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;width:100%;text-align:left">
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px">Merci pour votre achat et la confiance que vous nous accordez.</p>
+                                                   <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:30px">L'équipe {{ config('app.url') }}<br></p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="transparent" valign="top" style="width:580px;text-align:left;word-wrap:break-word;word-break:normal">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td height="30" style="line-height:30px;height:30px"><img alt="" src="https://ci6.googleusercontent.com/proxy/0MiK2GUnFDGdhMPf6Pv9BN3ct8Dl8NMQcHX1k-1NRPYYhmJ43P8FQxFJ7GHnqS9ecnW6kU0F6bJ6vh-0SUh9LJHTgb25B6eEii0RbvV00_8bSgDjTgk=s0-d-e1-ft#https://ovh.slgnt.eu/Portal/ResourceHandler/static/x.png?no-cache=1" border="0" height="30" style="display:block;height:30px" class="CToWUd"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="#f4f4f4" style="width:580px">
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation" bgcolor="#f4f4f4">
+      <tbody>
+         <tr>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+            <td class="m_5327504558924647655m_wrapper" bgcolor="transparent" valign="top" style="width:580px;text-align:left;word-wrap:break-word;word-break:normal">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                  <tbody>
+                     <tr>
+                        <td height="20" style="line-height:20px;height:20px"><img alt="" src="https://ci6.googleusercontent.com/proxy/0MiK2GUnFDGdhMPf6Pv9BN3ct8Dl8NMQcHX1k-1NRPYYhmJ43P8FQxFJ7GHnqS9ecnW6kU0F6bJ6vh-0SUh9LJHTgb25B6eEii0RbvV00_8bSgDjTgk=s0-d-e1-ft#https://ovh.slgnt.eu/Portal/ResourceHandler/static/x.png?no-cache=1" border="0" height="20" style="display:block;height:20px" class="CToWUd"></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="display:table">
+                  <tbody>
+                     <tr>
+                        <td style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;width:100%;text-align:center">
+                           <p style="font-family:Arial;font-size:16px;color:#4d5592;font-weight:normal;word-wrap:break-word;word-break:normal;font-style:normal;line-height:24px;padding-bottom:0px;text-align:center"><span style="font-size:12px">© {{ Date('Y') }} {{ config('app.url') }}</span></p>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="m_5327504558924647655m_hide" style="font-size:0;line-height:1px;height:1px" height="1">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
