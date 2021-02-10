@@ -174,9 +174,7 @@ class StripeController extends Controller
 
     private function sendEmailClient($commandeRes) {
 
-        $mailable = new NewCommandeForClient(
-            $commandeRes->ref,
-        );
+        $mailable = new NewCommandeForClient($commandeRes->ref);
 
         try {
             Mail::to($commandeRes->email_address)
