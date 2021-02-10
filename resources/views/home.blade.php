@@ -2,10 +2,19 @@
 
 @section('third_party_stylesheets')
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
-<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet">
+<!-- <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet"> -->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="/plugins/loading/buttonLoader.css" rel="stylesheet">
+
+<link rel="https://cdn.datatables.net/rowreorder/1.2.7/css/rowReorder.dataTables.min.css" />
+<link rel="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css" />
+
+
+
+
+
+
 @endsection
 
 @section('content')
@@ -46,7 +55,7 @@
                                     
                                     <!-- <h4>Orders List </h4> <br><br> -->
 
-                                    <table class="table table-bordered yajra-datatable">
+                                    <table class="table table-bordered yajra-datatable" style="overflow-x: auto">
                                         <thead>
                                             <tr>
                                                 <th>Action</th>
@@ -122,17 +131,30 @@
 @endsection
 
 @section('third_party_scripts')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/rowreorder/1.2.7/js/dataTables.rowReorder.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script src="/plugins/loading/jquery.buttonLoader.js"></script>
+
+
+
+
+
+
+
 
 <script type="text/javascript">
   $(function () {
     
     var table = $('.yajra-datatable').DataTable({
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true,
         processing: true,
         serverSide: true,
         ajax: "{{ route('orders.list') }}",
@@ -142,7 +164,7 @@
             {data: 'ref', name: 'ref'},
             {data: 'full_name', name: 'full_name'},
             {data: 'email_address', name: 'email_address'},
-            {data: 'phone_number', name: 'email_address'},
+            {data: 'phone_number', name: 'phone_number'},
             {data: 'country', name: 'country'},
         ]
     });
