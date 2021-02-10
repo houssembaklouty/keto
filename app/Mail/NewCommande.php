@@ -48,8 +48,6 @@ class NewCommande extends Mailable
      */
     public function build()
     {
-        return $this->subject('NV. COMMANDE')
-                    ->markdown('emails.nv_commande')
-        ;
+        return $this->subject('NV. COMMANDE')->markdown('emails.nv_commande');
     }
 }

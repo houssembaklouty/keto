@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use Illuminate\Support\Facades\Mail;
 use App\Mail\NewCommande;
+use App\Mail\NewCommandeForClient;
 use App\Transaction;
 use App\Commande;
 use App\User;
@@ -38,8 +40,6 @@ class StripeController extends Controller
     }
 
     public function storePay(Request $request) {
-
-        // return $request->all();
         
         $this->validate($request, [
             'token' => 'required',
@@ -53,26 +53,26 @@ class StripeController extends Controller
 
         $planStripe_id = '';
 
+        /*
+
         if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IJETqEzLd74QBPdhCf3cOxy'; }
         if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IJHdFEzLd74QBPd531159Rs'; }
         if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IJHdFEzLd74QBPd3NjyyJCL'; }
         if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IJHdFEzLd74QBPdEbQuOgd7'; }
         if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IJHdFEzLd74QBPdgu9N0bon'; }
+        */
 
-        /*
 
-        if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IJETqEzLd74QBPdhCf3cOxy'; }
-        if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IJEUIEzLd74QBPdrjEVOIKo'; }
+        if($product == '79') { $product = 'Pack 1';  $planStripe_id = 'price_1IIHuhAmEXvMDqamX36bJLAE'; }
+        if($product == '81') { $product = 'Pack 2';  $planStripe_id = 'price_1IIHqaAmEXvMDqamOtGpgaC3'; }
         if($product == '83') { $product = 'Pack 3';  $planStripe_id = 'price_1IJEUjEzLd74QBPdey38mhpu'; }
         if($product == '84') { $product = 'Pack 4';  $planStripe_id = 'price_1IJEVHEzLd74QBPdxBXrKVmU'; }
         if($product == '86') { $product = 'Pack 6';  $planStripe_id = 'price_1IJEVxEzLd74QBPdH7eN6izi'; }
 
-        */
-
-        
         $random = Str::uuid();
         
         $user = User::where('name', $request->access_token)->first();
+        // $user = User::where('id', 9)->first();
 
         $commandeRes = $this->createCommande($request, $product, $user->id);
 
@@ -87,7 +87,7 @@ class StripeController extends Controller
             'password' => bcrypt($random)
         ]);
 
-
+        
         try {
             $user->newSubscription($product, $planStripe_id)->create($request->token, 
                 [
@@ -97,11 +97,22 @@ class StripeController extends Controller
             );
 
         } catch (\Exception $e) {
-            return back()->withErrors(['message' => 'Error creating subscription. ' . $e->getMessage()]);
+            
+            return response()->json([
+                'data' => $e->getMessage() , 404
+            ]);
+            
+            return response()->json([
+                'data' => "Un dysfonctionnement s'est produit lors de la demande de paiement.", 404
+            ]);
+            
+            // return back()->withErrors(['data' => 'Error creating subscription. ' . $e->getMessage()]);
         }
-        
-        // $user->ends_at = Carbon::now()->addMonths(1);
 
+
+        $this->sendEmailToAdmin($commandeRes);
+        $this->sendEmailClient($commandeRes);
+        
         return response()->json([
             'data' => 'Nous avons bien reçu votre commande.', 'redirect_link' => $orderLink, 200
         ]);
@@ -126,6 +137,59 @@ class StripeController extends Controller
         ]);
 
         return $commande;
+    }
+
+    private function sendEmailToAdmin($commandeRes) {
+
+        $mailable = new NewCommande(
+            $commandeRes->address, 
+            $commandeRes->country, 
+            $commandeRes->email_address, 
+            $commandeRes->first_name, 
+            $commandeRes->last_name, 
+            $commandeRes->phone_number, 
+            $commandeRes->products, 
+            $commandeRes->state,
+            $commandeRes->zip_codel
+        );
+
+        try {
+            $email = config('app.admin_email');
+            Mail::to($email)
+                // ->cc($user->email)
+                ->send($mailable); // send
+
+        } catch (\Exception $e) {
+            \Log::info($e);
+            // return $e;
+                
+            return response()->json([
+                'data' => "Une erreur s'est produite lors de l'envoi de la commande.", 404
+            ]);
+
+            // return response()->json(['data' => "Une erreur s'est produite lors de l'envoi de la commande.", 404]);
+        }
+
+    }
+
+    private function sendEmailClient($commandeRes) {
+
+        $mailable = new NewCommandeForClient(
+            $commandeRes->ref, 
+        );
+
+        try {
+            Mail::to($commandeRes->email_address)
+                ->send($mailable); // send
+
+        } catch (\Exception $e) {
+            \Log::info($e);
+                
+            return response()->json([
+                'data' => "Une erreur s'est produite lors de l'envoi de la commande.", 404
+            ]);
+        }
+
     }
 
     public function cancelSubscription(Request $request) {
