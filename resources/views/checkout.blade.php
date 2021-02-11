@@ -637,7 +637,9 @@
 
 
     if("" == ""){
-        $('#country').val('FR').change();
+        var loc = {!! json_encode($location, JSON_HEX_TAG) !!};
+        $('#country').val(loc).change();
+        // $('#country').val('FR').change();
     }
 
     if("" != ""){

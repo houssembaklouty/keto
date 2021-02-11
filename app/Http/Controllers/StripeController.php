@@ -15,6 +15,7 @@ use App\User;
 use Exception;
 use Stripe;
 use Session;
+use Stevebauman\Location\Facades\Location;
 
 use Carbon\Carbon;
 
@@ -23,6 +24,11 @@ class StripeController extends Controller
 
     public function checkout_page() {
         
+        $location = Location::get( \Request::ip() );
+
+        if (!$location) { $location = 'FR'; } 
+        else { $location = $location->countryCode; }
+
         $random = Str::uuid();
 
         $user = User::create([
@@ -36,7 +42,7 @@ class StripeController extends Controller
             'intent' => $user->createSetupIntent()
         ];
 
-        return view('checkout')->with($data);
+        return view('checkout', compact('location', 'data'))->with($data);
     }
 
     public function storePay(Request $request) {
