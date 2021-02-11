@@ -33,6 +33,23 @@ Route::post('/checkout', 'StripeController@storePay')->name('pay.checkout');
 
 Route::delete('cancel', 'StripeController@cancelSubscription')->name('cancel.subscription');
 
+use Stevebauman\Location\Facades\Location;
+
+
+Route::get('test-geo', function() {
+
+    dd(\Request::ip(), Location::get( \Request::ip() ));
+
+    if ($position = Location::get()) {
+        // Successfully retrieved position.
+        
+        dd($position);
+    } else {
+        // Failed retrieving position.
+    }
+
+});
+
 // Route::get('/stripe-payment', 'StripeController@handleGet');
 // Route::post('/stripe-payment', 'StripeController@handlePost')->name('stripe.payment');
 
