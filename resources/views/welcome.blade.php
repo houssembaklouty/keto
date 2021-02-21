@@ -1087,10 +1087,10 @@
                 <div class="col-12 col-sm-2 pt-3 pt-sm-0 nav-b text-md-center text-center
               d-none d-md-block">
                 <span class="text-nowrap">
-                  <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
+                  <!-- <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
                           data-target="#cgu-privacy-modal" data-modal-source="/terms/ #page-content" data-modal-title="Terms
                        and Conditions" style="text-decoration: none; color:black;
-                       font-size:14px;">CGV et CGU</button><br>
+                       font-size:14px;">CGV et CGU</button><br> -->
                      <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
                              data-target="#cookie-privacy-modal" data-modal-source="/terms/ #page-content"
                              data-modal-title="Cookies" style="text-decoration: none; color:black;
@@ -1126,10 +1126,10 @@
                     <a href="#panel-what-is-bhb" style="text-decoration: none; color:black;
                 font-size:14px;">Ingrédients</a> |
                     <span class="text-nowrap">
-                <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
+                <!-- <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
                         data-target="#cgu-privacy-modal" data-modal-source="/terms/ #page-content" data-modal-title="Terms
                      and Conditions" style="text-decoration: none; color:black;
-                     font-size:14px;">CGV et CGU |</button>
+                     font-size:14px;">CGV et CGU |</button> -->
                      <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
                              data-target="#cookie-privacy-modal" data-modal-source="/terms/ #page-content"
                              data-modal-title="
@@ -1144,6 +1144,17 @@
                                                                data-modal-title="Mentions légales"
                                                                style="text-decoration: none; color:black; font-size:14px;">Mentions légales</button>
                 <br>
+
+                
+                <a class="btn btn-link p-0 border-0" onclick="window.open('/fr/Return-Refund-Policy');" style="text-decoration: none; color:black;
+                               font-size:14px; cursor: pointer;">Return & Refund Policy</a>
+                                <br>
+                          <a class="btn btn-link p-0 border-0" onclick="window.open('/fr/privacy-policy');" style="text-decoration: none; color:black;
+                               font-size:14px; cursor: pointer;">Privacy Policy</a>
+                                <br>
+                          <a class="btn btn-link p-0 border-0" onclick="window.open('/fr/Terms-Conditions');" style="text-decoration: none; color:black;
+                               font-size:14px; cursor: pointer;">Terms & Conditions</a>
+                               
                 </div>
                 <div class="col-12 col-sm-2 pt-3 pt-sm-0 nav-b text-md-center text-center
               d-block d-md-none">
@@ -2291,26 +2302,5 @@
     })();
 </script>
 <!-- /GetButton.io widget -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0D6T4KEWD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V0D6T4KEWD');
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-183045346-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-183045346-1');
-</script>
-
 
 </html>
