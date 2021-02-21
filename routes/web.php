@@ -14,7 +14,11 @@
 
 Route::get('/', function () { return view('welcome'); });
 
-Route::get('/checkout.html', 'StripeController@checkout_page')->name('checkout.page');
+
+Route::get('/test', function () { return view('paytest'); });
+
+Route::get('/checkout.html', 'PaypalController@index')->name('checkout.page');
+// Route::get('/checkout.html', 'StripeController@checkout_page')->name('checkout.page');
 
 Route::get('/order/{id}', function () { return view('confirm_checkout');});
 
@@ -26,7 +30,7 @@ Route::get('/admin/order', 'HomeController@index')->name('orders.index');
 
 
 Route::get('orders/list', 'HomeController@datatable')->name('orders.list');
-Route::get('orders/show', 'HomeController@orderShow')->name('orders.show');
+Route::get('orders/show', 'HomeController@orderShowPaypal')->name('orders.show');
 
 Route::post('/checkout', 'StripeController@storePay')->name('pay.checkout');
 

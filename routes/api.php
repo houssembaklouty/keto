@@ -19,6 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 */
 
 Route::post('/checkout', 'StripeController@storePay');
+Route::post('/saveCommande', 'PaypalController@saveCommande');
+Route::post('/paypal-capture-payment', 'PaypalController@paypalCapturePayment');
 
 // Route::group(['prefix' => 'kito', 'middleware' => 'cors'], function() {
 

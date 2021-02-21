@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Commande;
+use App\Transaction;
 use DataTables;
 use Auth;
 
@@ -125,6 +126,68 @@ class HomeController extends Controller
                 </p>
 
                 '.$subscription.'
+            </div>
+        </div>';
+
+    }
+
+    public function orderShowPaypal(Request $request) {
+
+        $commande = Commande::where('ref', $request->ref)->first();
+        $transaction = Transaction::where('ref', $request->ref)->select('ref', 'amount', 'state')->get();
+
+        return '
+        <div class="card">
+            <div class="card-header">
+                <h3>Order No: '.$commande->ref.'</h3>
+
+                <h6 class="float-right">Date: '.$commande->created_at.' </h6>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">* Fullname: <b> '.$commande->full_name.' </b> 
+
+                
+                </h4>
+
+                <h4 class="card-title float-right">* Email: <b> '.$commande->email_address.' </b> </h4>
+
+
+                <p class="card-text">
+                    <br>
+                    <div class="table-responsive-sm">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">products</th>
+                                    <th scope="col">address</th>
+                                    <th scope="col">city</th>
+                                    <th scope="col">country</th>
+                                    <th scope="col">zip_codel</th>
+                                    <th scope="col">termes</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>'.$commande->phone_number.'</td>
+                                    <td>'.$commande->products.'</td>
+                                    <td>'.$commande->address.'</td>
+                                    <td>'.$commande->city.'</td>
+                                    <td>'.$commande->country.'</td>
+                                    <td>'.$commande->zip_codel.'</td>
+                                    <td>'.$commande->termes.'</td>
+                                </tr>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                </p>
+
+                <br>
+                <hr>
+
+                <b>Transaction : </b>'.$transaction.'
             </div>
         </div>';
 
