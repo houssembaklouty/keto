@@ -656,7 +656,7 @@
 </script>
 
 <script
-    src="https://www.paypal.com/sdk/js?client-id=AdttvZgAehmurmZt53u_VZusAzNjiNY6qh3-F93Cxlhy_20Tvn8rNNHPXl4KVxOtPA5wXabv002wUKV_">
+    src="https://www.paypal.com/sdk/js?client-id=AYP9DA1rERDnwF7MpgJ_yxWF8rrTVEuHqkJT9-iU5Wru9OAdUlnBzKrbjpNMijxKxOkusNsf8dg9Usz_">
 </script>
 
 <script type="text/javascript">
@@ -923,14 +923,14 @@
                           "X-CSRF-TOKEN": token
                       },
                       body: JSON.stringify({
-												orderId : data.orderID,
-												id : details.id,
-												status: details.status,
-												payerEmail: details.payer.email_address,
-												amountValue: amountValue,
-												data: data,
-												details: details,
-												orderRef: orderRef,
+                            orderId : data.orderID,
+                            id : details.id,
+                            status: details.status,
+                            payerEmail: details.payer.email_address,
+                            amountValue: amountValue,
+                            data: data,
+                            details: details,
+                            orderRef: orderRef,
                       })
                   })
                   .then(status)
