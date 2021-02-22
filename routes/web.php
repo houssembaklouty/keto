@@ -41,3 +41,4 @@ Route::delete('cancel', 'StripeController@cancelSubscription')->name('cancel.sub
 Route::get('/fr/Return-Refund-Policy', function () { return view('pages/Return-Refund-Policy'); });
 Route::get('/fr/privacy-policy', function () { return view('pages/privacy-policy'); });
 Route::get('/fr/Terms-Conditions', function () { return view('pages/terms'); });
+Route::get('/pay-failed', function () { return view('pages/pay-failed'); });
