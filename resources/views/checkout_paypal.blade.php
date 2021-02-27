@@ -13,23 +13,23 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Plugins -->
@@ -39,18 +39,18 @@
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-K29LJKX"></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/defaults.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/font-gilroy.min.css">
-    <link rel="stylesheet" href="css/futura/font-futura.min.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="/css/defaults.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/font-gilroy.min.css">
+    <link rel="stylesheet" href="/css/futura/font-futura.min.css">
+    <link rel="stylesheet" href="/css/checkout.css">
     
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-K29LJKX"></script>
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="css/holdon.min.css">
+    <link rel="stylesheet" href="/css/holdon.min.css">
 
     
     <style type="text/css">
@@ -58,7 +58,7 @@
         @media (min-width: 768px) {
             body,
             html{
-                background:url('images/checkout-bg.jpg') top center;
+                background:url('/images/checkout-bg.jpg') top center;
                 background-size:contain;
                 background-repeat:no-repeat;
             }
@@ -66,7 +66,7 @@
         @media (min-width: 768px) {
             body,
             html{
-                background-image: url('images/checkout-bg.jpg'); 
+                background-image: url('/images/checkout-bg.jpg'); 
             }
         }
 
@@ -123,13 +123,13 @@
 <section class="container">
     <div class="row h-100 pt-2">
         <div class="col-12 my-auto">
-            <img src="images/logo.png" width="100px" class="img-fluid" style="margin-left: auto; margin-right: auto; display: block;" />
+            <img src="/images/logo.png" width="100px" class="img-fluid" style="margin-left: auto; margin-right: auto; display: block;" />
         </div>
     </div>
 
     <div class="row mt-2 py-2 cstm-2 free-shipping-text-container">
         <div class="col-12 text-left my-auto text-center pl-0" >
-            <img src="images/checkmark.png" width="30"/>
+            <img src="/images/checkmark.png" width="30"/>
             <span class="text-black approved approved-text"><b>Vous avez été approuvé pour la livraison gratuite</b></span>
             <br>
         </div>
@@ -140,23 +140,23 @@
     <div class="text-center" id="normal_products">
                                 
         <div id="product-79" data-product-id="1" data-offer-id="79" class="product">
-            <img src="{{ url('images/banners/BANNERS 1 BOITE 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners/BANNERS 1 BOITE 1.png') }}" class="img-fluid" />
         </div>
                 
         <div id="product-81" data-product-id="2" data-offer-id="81" class="product">
-            <img src="{{ url('images/banners/BANNERS 2 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners/BANNERS 2 BOITES 1.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-83" data-product-id="3" data-offer-id="83" class="product">
-            <img src="{{ url('images/banners/BANNERS 3 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners/BANNERS 3 BOITES 1.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-84" data-product-id="4" data-offer-id="84" class="product">
-            <img src="{{ url('images/banners/BANNERS 4 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners/BANNERS 4 BOITES 1.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-86" data-product-id="6" data-offer-id="86" class="product">
-            <img src="{{ url('images/banners/BANNERS 5 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners/BANNERS 5 BOITES 1.png') }}" class="img-fluid" />
         </div>
         
     </div>
@@ -173,7 +173,6 @@
 
         <form role="form" action="{{ route('pay.checkout') }}" method="POST" class="form"
             data-cc-on-file="false"
-            data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
             id="payment-form"
             >
             @csrf
@@ -483,9 +482,13 @@
                 </div>
                 <div class="col-12 pt-0 pt-md-3">
                     <div class="col-12 text-center px-0">
-                        <button id="card-button" type="submit" class="submit-btn cstm-12 btn btn-dark btn-lg btn-shop-now mt-2" style="line-height:1;width:325px;">
-                        <strong style="font-family:'raleway';font-size:1.7rem">COMMANDER</strong><br>
-                        <span style="font-size:1rem;">Recevez Votre Commande</span>
+                        <button id="card-button"
+                            type="submit"
+                            class="submit-btn cstm-12 btn btn-dark btn-lg btn-shop-now mt-2"
+                            style="line-height:1;width:325px;"
+                        >
+                            <strong style="font-family:'raleway';font-size:1.7rem">COMMANDER</strong><br>
+                            <img src="{{ url('/images/PAY_PAPYPAL_CC.png') }}">
                         </button>
 
                         <div class="credit-card__text">
@@ -552,8 +555,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script src="https://js.stripe.com/v3/"></script>
 <script src="{{ url('js/holdon.min.js') }}"></script>
 
 <script type="text/javascript">
@@ -740,9 +741,9 @@
             }
         }
         else{
-            $('#product-79 img').attr('src', '{!! url("images/banners/BANNERS 1 BOITE 1.png") !!}');
+            $('#product-79 img').attr('src', '{!! url("/images/banners/BANNERS 1 BOITE 1.png") !!}');
             if(offer_id == 79){
-                $(this).children('img').attr('src', '{!! url("images/banners/BANNERS 1 BOITE 2.png")  !!}');
+                $(this).children('img').attr('src', '{!! url("/images/banners/BANNERS 1 BOITE 2.png")  !!}');
             }
         }
 
@@ -772,9 +773,9 @@
             }
         }
         else{
-            $('#product-81 img').attr('src', '{{ url('images/banners/BANNERS 2 BOITES 1.png') }}');
+            $('#product-81 img').attr('src', '{{ url('/images/banners/BANNERS 2 BOITES 1.png') }}');
             if(offer_id == 81){
-                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 2 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 2 BOITES 2.png') }}');
             }
         }
 
@@ -806,9 +807,9 @@
             }
         }
         else{
-            $('#product-83 img').attr('src', '{{ url('images/banners/BANNERS 3 BOITES 1.png') }}');
+            $('#product-83 img').attr('src', '{{ url('/images/banners/BANNERS 3 BOITES 1.png') }}');
             if(offer_id == 83){
-                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 3 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 3 BOITES 2.png') }}');
             }
         }
 
@@ -822,9 +823,9 @@
             }
         }
         else{
-            $('#product-84 img').attr('src', '{{ url('images/banners/BANNERS 4 BOITES 1.png') }}');
+            $('#product-84 img').attr('src', '{{ url('/images/banners/BANNERS 4 BOITES 1.png') }}');
             if(offer_id == 84){
-                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 4 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 4 BOITES 2.png') }}');
             }
         }
 
@@ -838,9 +839,9 @@
             }
         }
         else{
-            $('#product-86 img').attr('src', '{{ url('images/banners/BANNERS 5 BOITES 1.png') }}');
+            $('#product-86 img').attr('src', '{{ url('/images/banners/BANNERS 5 BOITES 1.png') }}');
             if(offer_id == 86){
-                $(this).children('img').attr('src', '{{ url('images/banners/BANNERS 5 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 5 BOITES 2.png') }}');
             }
         }
 

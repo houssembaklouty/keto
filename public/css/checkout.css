@@ -45,7 +45,8 @@
 
 .submit-btn img{
 	width: 275px;
-	max-width: 100%;
+	max-width: 65%;
+	margin-top: .2em;
 }
 
 #btn-place-order{
