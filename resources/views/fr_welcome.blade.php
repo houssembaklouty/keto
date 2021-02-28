@@ -226,6 +226,15 @@
             </div>
         </a>
 
+        <div class="language">
+            <form action="" class="form-group">
+                <select onchange="location = this.value;" class="form-control">
+                    <option lang="en" value="en">English</option>
+                    <option lang="fr" value="" selected>Français</option>
+                </select>
+            </form>
+        </div>
+
         <button id="page-nav-mobile-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#page-nav-navbar" aria-controls="page-nav-navbar" aria-expanded="false"
                 aria-label="Toggle navigation">

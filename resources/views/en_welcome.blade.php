@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <title>Keto Produit de Perte de poids rapide en Tunisie</title>
+    <title>Keto Fast Weight Loss Product</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <!-- Meta Tags -->
     <meta name="language" content="french">
     <meta name="copyright" content="KETO SHOP">
-    <meta name="description" content="KETO Weight Loss UK est un nouveau complément alimentaire cliniquement prouvé pour vous aider à perdre du poids, il donne de l'énergie et de l'équilibre à votre corps. NovaKeto est spécialement conçue pour aider la production de cétone de votre corps à dissoudre rapidement la graisse et à booster votre énergie! Commencez dès aujourd'hui !">
+    <meta name="description" content="KETO Weight Loss UK is a new food supplement clinically proven to help you lose weight, it gives energy and balance to your body. NovaKeto is specially designed to help your body's ketone production quickly dissolve fat and boost your energy! Get started today!">
 
     <meta property="og:url" content=""/>
     <meta property="og:title"
-          content="KETO Weight Loss UK est un nouveau complément alimentaire cliniquement prouvé pour vous aider à perdre du poids, il donne de l'énergie et de l'équilibre à votre corps. NovaKeto est spécialement conçue pour aider la production de cétone de votre corps à dissoudre rapidement la graisse et à booster votre énergie! Commencez dès aujourd'hui !"/>
-    <meta property="KETO Weight Loss UK est un nouveau complément alimentaire cliniquement prouvé pour vous aider à perdre du poids, il donne de l'énergie et de l'équilibre à votre corps. NovaKeto est spécialement conçue pour aider la production de cétone de votre corps à dissoudre rapidement la graisse et à booster votre énergie! Commencez dès aujourd'hui !"
+          content="KETO Weight Loss UK is a new food supplement clinically proven to help you lose weight, it gives energy and balance to your body. NovaKeto is specially designed to help your body's ketone production quickly dissolve fat and boost your energy! Get started today!"/>
+    <meta property="KETO Weight Loss UK is a new food supplement clinically proven to help you lose weight, it gives energy and balance to your body. NovaKeto is specially designed to help your body's ketone production quickly dissolve fat and boost your energy! Get started today!"
           content=""/>
     <meta property="og:image" content="images/logo.png"/>
 
@@ -57,7 +57,6 @@
         #main-header {
             background: url('images/keto-pills-shop.png') center/auto 80% no-repeat,
             url('images/bg.png') center/auto 50% no-repeat;
-
         }
 
         #main-header .mh-part-2 .mh-list li.list-icon-feature-belly::before {
@@ -201,7 +200,6 @@
     <div class="container">
         <a class="navbar-brand" href="./">
             <img src="/images/logo.png" alt="KETO Weight Loss US Shop logo" width="70px"></a>
-
         <a id="order_now" href="{{ route('en.checkout.page') }}" class="order-btn
 		font-weight-bold px-4 flex-column" role="button" style="display:none;width:160px;">
             <div style="height:33px;" class="nav-btn_color text-center">COMMANDER MAINTENANT</div>
@@ -225,6 +223,15 @@
                 </div>
             </div>
         </a>
+
+        <div class="language">
+            <form action="" class="form-group">
+                <select onchange="location = this.value;" class="form-control">
+                    <option lang="en" value="" selected>English</option>
+                    <option lang="fr" value="fr">Français</option>
+                </select>
+            </form>
+        </div>
 
         <button id="page-nav-mobile-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#page-nav-navbar" aria-controls="page-nav-navbar" aria-expanded="false"
