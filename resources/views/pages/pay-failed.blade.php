@@ -55,17 +55,32 @@
             <a href="{{ config('app.url') }}" rel="noopener noreferrer" style="text-decoration:none" target="_blank" data-saferedirecturl=""><img id="m_5327504558924647655OWATemporaryImageDivContainer1" src="{{ url('images/logo.png') }}" alt="" border="0" width="250" style="max-width:250px;display:block;width:174px;border-radius: 50%;" class="CToWUd"></a>
 
             <br> <br>
-            <div class="code">404 - Not Found</div>
+            <div class="code">
+                @if(\Request::get('locale') == 'fr')
+                    Une erreur s'est produite
+                @else
+                    An error has occurred
+                @endif
+            </div>
             <br> <br> <br>
 
             <table cellpadding="0" cellspacing="0" border="0" role="presentation" class="m_5327504558924647655btn_table" style="display:table">
                 <tbody>
                     <tr>
+                    
+                    @if(\Request::get('locale') == 'fr')  
                     <td class="m_5327504558924647655btn_td" bgcolor="#000000" style="font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block;padding: 1em 2.4em;">
-                        <a href="{{ route('checkout.page') }}" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
+                        <a href="{{ route('fr.checkout.page') }}" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
                             Lelancer la commande
                         </a>
                     </td>
+                    @else
+                    <td class="m_5327504558924647655btn_td" bgcolor="#000000" style="font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block;padding: 1em 2.4em;">
+                        <a href="{{ route('fr.checkout.page') }}" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
+                            Launch the command
+                        </a>
+                    </td>
+                    @endif
                     </tr>
                 </tbody>
             </table>
@@ -73,11 +88,20 @@
             <table cellpadding="0" cellspacing="0" border="0" role="presentation" class="m_5327504558924647655btn_table" style="display:table;">
                 <tbody>
                     <tr>
-                    <td class="m_5327504558924647655btn_td" bgcolor="#2abebc" style="margin-top: .5em; font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block; padding: 1em .9em;">
-                        <a href="/" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
-                            Retour vers la page d'accueil
-                        </a>
-                    </td>
+
+                    @if(\Request::get('locale') == 'fr')  
+                        <td class="m_5327504558924647655btn_td" bgcolor="#2abebc" style="margin-top: .5em; font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block; padding: 1em .9em;">
+                            <a href="/" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
+                                Retour vers la page d'accueil
+                            </a>
+                        </td>
+                    @else
+                        <td class="m_5327504558924647655btn_td" bgcolor="#2abebc" style="margin-top: .5em; font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block; padding: 1em .9em;">
+                            <a href="/" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
+                                Back to the home page
+                            </a>
+                        </td>
+                    @endif
                     </tr>
                 </tbody>
             </table>

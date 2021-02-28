@@ -22,14 +22,24 @@ class PaypalController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index_fr()
     {
         $location = Location::get( \Request::ip() );
 
         if (!$location) { $location = 'FR'; } 
         else { $location = $location->countryCode; }
 
-        return view('checkout_paypal', compact('location'));
+        return view('checkout_paypal_fr', compact('location'));
+    }
+
+    public function index_en()
+    {
+        $location = Location::get( \Request::ip() );
+
+        if (!$location) { $location = 'FR'; } 
+        else { $location = $location->countryCode; }
+
+        return view('checkout_paypal_en', compact('location'));
     }
 
     /**

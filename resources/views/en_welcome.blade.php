@@ -202,7 +202,7 @@
         <a class="navbar-brand" href="./">
             <img src="/images/logo.png" alt="KETO Weight Loss US Shop logo" width="70px"></a>
 
-        <a id="order_now" href="checkout.html" class="order-btn
+        <a id="order_now" href="{{ route('en.checkout.page') }}" class="order-btn
 		font-weight-bold px-4 flex-column" role="button" style="display:none;width:160px;">
             <div style="height:33px;" class="nav-btn_color text-center">COMMANDER MAINTENANT</div>
             <div class="text-center shipping-text">LIVRAISON DANS LE MONDE ENTIER</div>
@@ -235,19 +235,19 @@
         <div id="page-nav-navbar" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#panel-how-keto-works" class="nav-link anchor-link text-uppercase">COMMENT ÇA MARCHE ?</a>
+                    <a href="#panel-how-keto-works" class="nav-link anchor-link text-uppercase">HOW IT WORKS ?</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#panel-customer-reviews" class="nav-link anchor-link text-uppercase">AVIS</a>
+                    <a href="#panel-customer-reviews" class="nav-link anchor-link text-uppercase">NOTICE</a>
                 </li>
                 <li class="nav-item">
                     <a href="#panel-what-is-bhb" class="nav-link anchor-link text-uppercase">INGREDIENTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#panel-about-us" class="nav-link anchor-link text-uppercase">A Propos</a>
+                    <a href="#panel-about-us" class="nav-link anchor-link text-uppercase">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a href="checkout.html" class="nav-link text-uppercase">Acheter Maintenant &nbsp;
+                    <a href="{{ route('en.checkout.page') }}" class="nav-link text-uppercase">BUY NOW &nbsp;
                         <i class="fas fa-shopping-cart"></i></a>
                 </li>
             </ul>
@@ -264,18 +264,18 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="mh-title-2 mb-0 mt-1">
-                                AU SERVICE DE
-                                <br>VOTRE MINCEUR&excl;
+                                SERVING
+                                <br>YOUR SLIMNESS&excl;
                             </h2>
                         </div>
 
                         <div class="mh-list-holder col-10 col-sm-7 col-md-12 pr-0">
                             <ul class="mh-list mt-2 mb-1 mb-sm-2 px-0 pt-md-2">
-                                <li class="list-icon-feature-belly">Capteur graisses & Sucres</li>
-                                <li class="list-icon-feature-apple">Contrôle de l'appétit</li>
-                                <li class="list-icon-feature-man">Boosteur de métabolisme</li>
-                                <li class="list-icon-feature-pill-bottle">Détoxifiant Renforcé</li>
-                                <li class="list-icon-feature-face-hands">Revitaliser votre énergie</li>
+                                <li class="list-icon-feature-belly">Fat & Sugar sensor</li>
+                                <li class="list-icon-feature-apple">Appetite control</li>
+                                <li class="list-icon-feature-man">Metabolism booster</li>
+                                <li class="list-icon-feature-pill-bottle">Reinforced Detoxifier</li>
+                                <li class="list-icon-feature-face-hands">Revitalize your energy</li>
                             </ul>
                         </div>
 
@@ -377,7 +377,7 @@
                                         </div>
                                         <div class="col-2 px-1 px-sm-3 text-center ">
                                             <img src="images/icon_nutrition_soy_free.svg" alt="Sans Soja">
-                                            <div>Sans Soja</div>
+                                            <div>FSSAI</div>
                                         </div>
                                     </div>
                                 </div>
@@ -388,16 +388,15 @@
 
                 <div class="mh-part-1 col-12 col-md-5 offset-md-2 order-1 order-md-2 mb-4 mb-sm-0 pt-2 pt-sm-4 pb-4 pb-md-2 pb-lg-5 pr-3 mt-lg-3 text-right">
                     <h2 class="mh-title-1 text-secondary mb-md-3 mb-lg-5">
-                        MAINTENIR LA CÉTOSE.
+                        MAINTAIN KETOSIS.
                         <br>
-                        BRÛLEZ LES GRAISSES.
+                        BURN FAT.
                         <br>
-                        AUGMENTEZ L'ÉNERGIE.
+                        INCREASE THE ENERGY.
                     </h2>
-                    <a href="checkout.html" class="btn btn-dark btn-lg btn-shop-now text-uppercase"
+                    <a href="{{ route('en.checkout.page') }}" class="btn btn-dark btn-lg btn-shop-now text-uppercase"
                        role="button">Commander &gt;&gt;</a>
-                    <p class="mh-money-back-guarantee-label mb-0">&lpar;7 Jours Satisfaits ou
-                        Remboursés&excl;&rpar;</p>
+                    <p class="mh-money-back-guarantee-label mb-0">(7 Days Money Back Guarantee!) </p>
 
                     <div class="mh-icons mt-md-4 mt-lg-5">
                         <div class="row">
@@ -444,23 +443,23 @@
     <section class="container container-patch">
         <div class="row color-box py-5">
             <div class="col">
-                <h2 class="text-center pb-4">Vivez un mode de vie sain sans:</h2>
+                <h2 class="text-center pb-4">Live a healthy lifestyle without:</h2>
                 <div class="row d-flex justify-content-center" style="font-size:18px;">
                     <div class="col-10 col-sm-5 col-md-4">
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check-circle"></i> Fatigue, basse d'énergie</li>
-                            <li><i class="fas fa-check-circle"></i> Insomnie</li>
-                            <li><i class="fas fa-check-circle"></i> entre, taille, bras flasques</li>
-                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Graisse tenace et indésirable </li>
-                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Anxiété ou dépression, stress </li>
-                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Système digestif lent</li>
+                            <li><i class="fas fa-check-circle"></i> Fatigue, low energy</li>
+                            <li><i class="fas fa-check-circle"></i> Insomnia</li>
+                            <li><i class="fas fa-check-circle"></i> between, waist, flabby arms</li>
+                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Stubborn and unwanted grease </li>
+                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Anxiety or depression, stress </li>
+                            <li class="d-block d-sm-none"><i class="fas fa-check-circle"></i> Slow digestive system</li>
                         </ul>
                     </div>
                     <div class="col-sm-5 col-md-4 d-none d-sm-inline">
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check-circle"></i> Graisse tenace et indésirable</li>
-                            <li><i class="fas fa-check-circle"></i> Anxiété ou dépression, stress</li>
-                            <li><i class="fas fa-check-circle"></i> Système digestif lent</li>
+                            <li><i class="fas fa-check-circle"></i> Stubborn and unwanted grease</li>
+                            <li><i class="fas fa-check-circle"></i> Anxiety or depression, stress</li>
+                            <li><i class="fas fa-check-circle"></i> Slow digestive system</li>
                         </ul>
                     </div>
                 </div>
@@ -477,7 +476,7 @@
                             <div class="row align-items-center center">
                                 <div class="col">
                                     <header class="ps-header text-black">
-                                        <h2 class="ps-header-title">POURQUOI KETO&quest;</h2>
+                                        <h2 class="ps-header-title">WHY KETO&quest;</h2>
                                         <hr class="ps-header-title-line">
                                     </header>
                                 </div>
@@ -485,20 +484,16 @@
                         </div>
                         <div class="ps-body text-center px-sm-3 px-2">
                             <p>
-                                KETO est un moyen révolutionnaire de brûler les graisses pour les hommes et les femmes
-                                simplement en ce déplacement, les mamans occupées, les entrepreneuse axées sur la
-                                carrière, les amateurs de fitness et les athlètes de haut niveau de tous âges.
+                                KETO is a revolutionary way to burn fat for men and women just on the go, busy moms, 
+                                career-focused entrepreneurs, fitness enthusiasts, and top athletes of all ages.
                             </p>
                             <p>
-                                Nos extraits naturels de première qualité facilitent une perte de graisse rapide et
-                                saine, améliorent les performances physiques, contribuent à une plus grande clarté
-                                mentale, améliorent l'humeur en stimulant les hormones du bien-être, réduisent le stress
-                                en supprimant les hormones du stress comme le cortisol et favorisent le bien-être
-                                général et une santé optimale.
+                                Our premium natural extracts facilitate fast and healthy fat loss, improve physical performance, 
+                                contribute to greater mental clarity, improve mood by boosting feel-good hormones, 
+                                reduce stress by suppressing stress hormones like cortisol and promote general well-being and optimal health.
                             </p>
                             <p>
-                                Notre formule unique, fabriquée dans un laboratoire certifié ISO9001, met votre corps en cétose rapidement et
-                                facilement.
+                                Our unique formula, made in an ISO9001 certified lab, puts your body into ketosis quickly and easily.
                             </p>
                         </div>
                     </article>
@@ -513,14 +508,14 @@
             <div id="panel-proven-results" class="col-12 col-sm-6 pr-1 py-4 py-md-5">
                 <div class="container text-center py-4 py-md-5 h-100">
                     <header class="ps-header text-white">
-                        <h2 class="ps-header-title">IL Y A DES RÉSULTATS PROUVÉS</h2>
+                        <h2 class="ps-header-title">THERE ARE PROVEN RESULTS</h2>
                     </header>
 
                     <div class="ps-body text-white">
                         <p>
-                            Plus de 185 000 clients satisfaits ont déjà vu des résultats et des avantages incroyables de
-                            KETO. Intensifiez et rapprochez-vous de vos objectifs de poids en utilisant KETO. C'est une
-                            grande chance de nous rejoindre maintenant et d'être témoin de la puissance de KETO.
+                            Over 185,000 satisfied customers have already seen the incredible results and benefits of KETO.
+                            Step up and get closer to your weight goals using KETO.
+                            It's a great chance to join us now and witness the power of KETO.
                         </p>
                     </div>
                 </div>
@@ -529,15 +524,14 @@
             <div id="panel-no-strict-dieting" class="col-12 col-sm-6 pl-1 py-4 py-md-5">
                 <div class="container text-center py-4 py-md-5 h-100">
                     <header class="ps-header text-white">
-                        <h2 class="ps-header-title">PAS DE RÉGIME STRICTE</h2>
+                        <h2 class="ps-header-title">NO STRICT DIET</h2>
                     </header>
 
                     <div class="ps-body text-white">
                         <p>
-                            Vous n'avez pas à vous soucier de suivre un régime difficile pour perdre du poids. Vous
-                            pouvez profiter des résultats incroyables sans suivre un régime strict et profiter de vos
-                            aliments préférés! La perte de poids Keto est compatible avec tous les régimes et modes de
-                            vie.
+                            You don't have to worry about hard dieting to lose weight. 
+                            You can enjoy the incredible results without following a strict diet and enjoying your favorite foods! 
+                            Keto Weight Loss is compatible with all diets and lifestyles.
                         </p>
                     </div>
                 </div>
@@ -547,15 +541,14 @@
             <div id="panel-easy-to-use" class="col-12 col-sm-6 pr-1 py-0 py-sm-1">
                 <div class="container text-center py-4 py-md-5 h-100">
                     <header class="ps-header text-white">
-                        <h2 class="ps-header-title">C'EST SI FACILE À UTILISER</h2>
+                        <h2 class="ps-header-title">IT'S SO EASY TO USE</h2>
                     </header>
 
                     <div class="ps-body text-white">
                         <p>
-                            Il n'y a certainement aucun programme de régime compliqué avec KETO et vous n'avez pas non
-                            plus besoin de faire des mélanges spéciaux tous les jours. Vous adorerez simplement prendre
-                            1 supplément de qualité supérieure, 2 gélules le matin avec une tasse chaude d'eau
-                            citronnée, et perdre du poids aussi facilement que 1‐2‐3!
+                            There is certainly no complicated diet plan with KETO and you also don't need to make any special mixes every day. 
+                            You'll just love to take 1 premium supplement, 
+                            2 softgels in the morning with a hot cup of lemon water, and lose weight as easily as 1‐2‐3!
                         </p>
                     </div>
                 </div>
@@ -565,15 +558,14 @@
             <div id="panel-keto-for-you" class="col-12 col-sm-6 pl-1 py-0 py-sm-1">
                 <div class="container text-center py-4 py-md-5 h-100">
                     <header class="ps-header text-white">
-                        <h2 class="ps-header-title">KETO EST POUR VOUS</h2>
+                        <h2 class="ps-header-title">KETO IS FOR YOU</h2>
                     </header>
 
                     <div class="ps-body text-white">
                         <p>
-                            KETO est un système révolutionnaire de combustion des graisses pour TOUS ceux qui ont besoin
-                            d'aide avec le Fitness. Vous pourriez être une femme de tous les jours en déplacement, des
-                            mamans occupées, des femmes d'affaires axées sur la carrière, des amateurs de fitness et des
-                            athlètes de haut niveau…
+                            KETO is a revolutionary fat burning system for ALL who need help with fitness. 
+                            You could be an everyday woman on the go, busy moms, career-oriented businesswomen, 
+                            fitness enthusiasts and high performance athletes ...
                         </p>
                     </div>
                 </div>
@@ -592,7 +584,7 @@
                             <div class="row align-items-center center">
                                 <div class="col">
                                     <header class="ps-header text-black">
-                                        <h2 class="ps-header-title">POURQUOI ÇA MARCHE&quest;</h2>
+                                        <h2 class="ps-header-title">WHY DOES IT WORK&quest;</h2>
                                         <hr class="ps-header-title-line">
                                     </header>
                                 </div>
@@ -600,23 +592,16 @@
                         </div>
                         <div class="ps-body text-center px-sm-3 px-2">
                             <p>
-                                KETO est un moyen révolutionnaire pour aider à favoriser l'amincissement et aider à
-                                brûler les graisses pour les hommes et les femmes en déplacement, KETO va aider à
-                                limiter la sensation de faim et contribuer à réduire l'appétit!
+                            KETO is a revolutionary way to help promote slimming and help burn fat for men and women on the go, KETO will help curb hunger pangs and help reduce appetite!
                             </p>
                             <p>
-                                KETO va aider à éliminer les métaux lourds et favoriser la détox de l'organisme agissant
-                                ainsi comme un brûle graisse. Keto peut ainsi contribuer à l’amincissement en
-                                compléments de mesures diététiques.
+                                KETO will help eliminate heavy metals and promote detoxification of the body, thus acting as a fat burner. Keto can thus contribute to slimming as a supplement to dietary measures.
                             </p>
                             <p>
-                                Notre formule végétarienne est unique, fabriquée aux États-Unis, cela met votre corps en
-                                cétose rapidement et facilement. 100% naturel, biologique et le tout premier supplément
-                                Keto disponible sur le marché francophone.
+                            Our unique vegetarian formula, made in the USA, puts your body into ketosis quickly and easily. 100% natural, organic and the very first Keto supplement available on the French speaking market.
                             </p>
-                            <a href="checkout.html"
-                               class="order-btn font-weight-bold px-4 nav-btn_color my-0 py-2" role="button">Commander
-                                Maintenant</a>
+                            <a href="{{ route('en.checkout.page') }}"
+                               class="order-btn font-weight-bold px-4 nav-btn_color my-0 py-2" role="button">Order Now</a>
                         </div>
                     </article>
                 </div>
@@ -629,7 +614,7 @@
         <div class="row ">
             <div class="col text-center">
                 <header class="ps-header text-black">
-                    <h2 class="ps-header-title">COMMENT ÇA FONCTIONNE&quest;</h2>
+                    <h2 class="ps-header-title">HOW IT WORKS&quest;</h2>
                     <hr class="ps-header-title-line">
                 </header>
             </div>
@@ -639,10 +624,7 @@
                 <div class="px-5 box panel-light">
                     <h1>1.</h1>
                     <p>
-                        KETO est un système de perte de poids qui fusionne le pouvoir synergique de 3 suppléments
-                        naturels à base de plantes. Les ingrédients thermogéniques de cette formule exclusive concentrée
-                        sont scientifiquement prouvés pour stimuler votre métabolisme afin que vous brûliez les calories
-                        et les graisses plus rapidement.
+                        KETO is a weight loss system that merges the synergistic power of 3 natural herbal supplements. The thermogenic ingredients in this exclusive concentrated formula are scientifically proven to boost your metabolism so you burn calories and fat faster.
                     </p>
                 </div>
             </div>
@@ -650,8 +632,7 @@
                 <div class="px-5 box panel-medium">
                     <h1>2.</h1>
                     <p>
-                        Nous les avons combinés avec du BHB (Beta ‐ Hydroxybutyrate): c'est un ingrédient unique qui met
-                        immédiatement votre corps en cétose, éliminant tout votre excès de poids.
+                        We have combined them with BHB (Beta - Hydroxybutyrate): this is a unique ingredient that immediately puts your body in ketosis, shedding all of your excess weight.
                     </p>
                 </div>
             </div>
@@ -659,10 +640,7 @@
                 <div class="px-5 box panel-dark">
                     <h1>3.</h1>
                     <p>
-                        La cétose est un état dans lequel votre corps utilise des excès de graisse pour l'énergie au
-                        lieu des glucides. Cela se traduit par une élimination rapide de l'excès de poids, et augmente
-                        également l'énergie, réduit la faim et l'appétit, une meilleure concentration mentale. tout en
-                        mangeant vos aliments préférés.
+                        Ketosis is a condition where your body uses excess fat for energy instead of carbohydrates. This results in rapid elimination of excess weight, and also increases energy, reduces hunger and appetite, better mental focus. while eating your favorite foods.
                     </p>
                 </div>
             </div>
@@ -670,8 +648,7 @@
                 <div class="px-5 box panel-light">
                     <h1>4.</h1>
                     <p>
-                        Notre formule unique, breveté et fabriquée aux États-Unis, met votre corps en cétose rapidement
-                        et facilement.
+                        Our unique formula, patented and made in the USA, puts your body in ketosis quickly and easily.
                     </p>
                 </div>
             </div>
@@ -685,8 +662,8 @@
                 <div class="col">
                     <article>
                         <header class="ps-header text-black">
-                            <h1 class="ps-header-title">DÉCOUVREZ CE QUE CERTAINS
-                                <br>DE NOS CLIENTS DISENT</h1>
+                            <h1 class="ps-header-title">DISCOVER WHAT SOME
+                                <br>OF OUR CUSTOMERS SAY</h1>
                             <hr class="ps-header-title-line border-black ml-0">
                         </header>
 
@@ -695,9 +672,7 @@
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <blockquote class="blockquote ps-review">
                                         <p class="mb-2">
-                                            J'ai pris tellement de poids ces dernières années et j'étais à un moment de
-                                            ma vie que j'ai réalisé que quelque chose devait être fait. J'ai essayé
-                                            tellement de régimes différents et j'ai finalement trouvé Keto. Cela a changé ma vie pour le mieux&excl;
+                                        I have gained so much weight over the past few years and was at a point in my life that I realized something had to be done. I have tried so many different diets and finally found Keto. It changed my life for the better!
                                         </p>
                                         <footer class="blockquote-footer">
                                             Leslie L.
@@ -711,21 +686,16 @@
 													&nbsp;
 												</span>
                                             <br class="d-none d-lg-block">
-                                            <cite class="text-bright-green font-weight-bold text-nowrap">Acheteur
-                                                vérifié</cite>
+                                            <cite class="text-bright-green font-weight-bold text-nowrap">Verified buyer</cite>
                                             <br>
-                                            <small>&lpar;Les résultats peuvent varier d'une personne à l'autre.&rpar;
-                                            </small>
+                                            <small>(Results may vary from person to person.) </small>
                                         </footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <blockquote class="blockquote ps-review">
                                         <p class="mb-2">
-                                            Si vous cherchez à perdre du poids rapidement et à avoir plus d'énergie pour
-                                            faire tout ce que vous aimez faire, je recommande fortement la perte de
-                                            poids Keto! C'est bon pour vous et pour votre bien-être
-                                            général. Vous devez essayer ce produit tout de suite&excl;
+                                        If you are looking to lose weight fast and have more energy to do whatever it is you love to do, I highly recommend Keto Weight Loss! It's good for you and for your general well-being. You must try this product right away!
                                         </p>
                                         <footer class="blockquote-footer">
                                             Christine W.
@@ -739,20 +709,16 @@
 													&nbsp;
 												</span>
                                             <br class="d-none d-lg-block">
-                                            <cite class="text-bright-green font-weight-bold text-nowrap">Acheteur
-                                                vérifié</cite>
+                                            <cite class="text-bright-green font-weight-bold text-nowrap">Verified buyer</cite>
                                             <br>
-                                            <small>&lpar;Les résultats peuvent varier d'une personne à l'autre.&rpar;
-                                            </small>
+                                            <small>(Results may vary from person to person.)</small>
                                         </footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <blockquote class="blockquote ps-review">
                                         <p class="mb-2">
-                                            Keto m'a pensé à m'aimer à nouveau! Je prenais conscience de
-                                            mon poids, je ne me regardais pas dans le miroir. Mais après avoir essayé Keto, j'ai commencé à perdre du poids rapidement! J'ai commencé
-                                            à chercher et à me sentir mieux&excl;
+                                            Keto thought about loving myself again! I became aware of my weight, I didn't look at myself in the mirror. But after trying Keto I started to lose weight fast! I started to look and feel better!
                                         </p>
                                         <footer class="blockquote-footer">
                                             Sonia P.
@@ -766,21 +732,16 @@
 													&nbsp;
 												</span>
                                             <br class="d-none d-lg-block">
-                                            <cite class="text-bright-green font-weight-bold text-nowrap">Acheteur
-                                                vérifié</cite>
+                                            <cite class="text-bright-green font-weight-bold text-nowrap">Verified buyer</cite>
                                             <br>
-                                            <small>&lpar;Les résultats peuvent varier d'une personne à l'autre.&rpar;
-                                            </small>
+                                            <small>(Results may vary from person to person.)</small>
                                         </footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <blockquote class="blockquote ps-review">
                                         <p class="mb-2">
-                                            La perte de poids Keto est une bouée de sauvetage! Cela me
-                                            donne tellement d'énergie pour travailler et vivre ma vie au maximum! Je
-                                            suis capable de faire tout ce que je veux, au lieu de trouver des excuses.
-                                            Je peux manger ce que je veux quand je veux!&excl;
+                                            Keto Weight Loss is a lifeline! It gives me so much energy to work and live my life to the fullest! I can do whatever I want, instead of making excuses. I can eat whatever I want when I want !!
                                         </p>
                                         <footer class="blockquote-footer">
                                             Lianne T.
@@ -794,11 +755,9 @@
 													&nbsp;
 												</span>
                                             <br class="d-none d-lg-block">
-                                            <cite class="text-bright-green font-weight-bold text-nowrap">Acheteur
-                                                vérifié</cite>
+                                            <cite class="text-bright-green font-weight-bold text-nowrap">Verified buyer</cite>
                                             <br>
-                                            <small>&lpar;Les résultats peuvent varier d'une personne à l'autre.&rpar;
-                                            </small>
+                                            <small>(Results may vary from person to person.)</small>
                                         </footer>
                                     </blockquote>
                                 </div>
@@ -817,11 +776,8 @@
                 <div class="col">
                     <article>
                         <div class="ps-body text-center px-sm-3 px-2">
-                            <h2 class="my-4">Ne manquez pas cette occasion de conquérir vos objectifs de perte de poids
-                                et d'atteindre votre meilleure version absolue de vous!</h2>
-                            <h2>Nous avons quelques éléments essentiels dont vous aurez besoin pour rendre cela
-                                possible… Utiliser ce système de fitness efficace pour adapter votre style de vie sain
-                                est aussi simple que 1, 2, 3…</h2>
+                            <h2 class="my-4">Don't miss this opportunity to conquer your weight loss goals and achieve your absolute best version of you!</h2>
+                            <h2>We have a few essentials you will need to make this possible… Using this effective fitness system to fit your healthy lifestyle is as easy as 1, 2, 3…/h2>
                         </div>
                     </article>
                 </div>
@@ -839,32 +795,23 @@
                             <div class="row align-items-left">
                                 <div class="col">
                                     <header class="ps-header">
-                                        <h2 class="ps-header-title">QU'EST-CE QUE LE BHB&quest;</h2>
+                                        <h2 class="ps-header-title">WHAT IS BHB?</h2>
                                     </header>
                                 </div>
                             </div>
                         </div>
                         <div class="ps-body px-sm-3 px-2">
                             <p>
-                                Comprendre le BHB est essentiel pour rejoindre le régime cétogénétique et rester en
-                                cétose. Alors qu'est-ce que le BHB exactement? Le BHB (Beta ‐ Hydroxybutyrate) est un
-                                composé organique et est considéré comme l'un des corps cétoniques «physiologiques»
-                                produits et brûlés dans nos cellules.
+                                Understanding BHB is essential for joining the ketogenic diet and staying in ketosis. So what exactly is BHB? BHB (Beta - Hydroxybutyrate) is an organic compound and is considered to be one of the “physiological” ketone bodies produced and burned in our cells.
                             </p>
                             <p>
-                                La meilleure façon d'augmenter la production de BHB endogène est d'atteindre un état de
-                                cétose nutritionnelle en réduisant l'apport en glucides ou le jeûne.
+                                The best way to increase endogenous BHB production is to achieve a state of nutritional ketosis by reducing carbohydrate intake or fasting.
                             </p>
                             <p>
-                                Les cétones endogènes sont produites naturellement par l'organisme grâce à un régime
-                                pauvre en glucides ou à jeun. Le processus de création de BHB endogène est appelé
-                                cétogenèse.
+                                Endogenous ketones are produced naturally by the body through a low-carb diet or on an empty stomach. The process of creating endogenous BHB is called ketogenesis.
                             </p>
                             <p>
-                                Pour fournir une alternative plus rapide à la production de cétones naturelles, il
-                                existe des cétones BHB exogènes qui peuvent être consommées par le biais de suppléments.
-                                Les cétones exogènes proviennent d'une source externe car elles ne sont pas produites
-                                dans le corps.
+                                To provide a faster alternative to natural ketone production, there are exogenous BHB ketones which can be consumed through supplements. Exogenous ketones come from an external source as they are not produced in the body.
                             </p>
                         </div>
                     </article>
@@ -882,7 +829,7 @@
                         <div class="row align-items-center text-center">
                             <div class="col">
                                 <header class="ps-header text-black text-center">
-                                    <h2 class="ps-header-title">OÙ COMMENCER&excl;</h2>
+                                    <h2 class="ps-header-title">WHERE TO START!</h2>
                                     <hr class="ps-header-title-line">
                                 </header>
                             </div>
@@ -897,28 +844,25 @@
                         </div>
                         <div class="ps-body text-black px-4">
                             <p class="text-bold">
-                                Après un régime cétogène, complété par notre supplément de BHB ceci est le meilleur
-                                moyen de commencer à mettre votre corps en cétose et de ressentir les effets de la
-                                compatibilité avec les cétos&excl;
+                                After a ketogenic diet supplemented with our BHB supplement this is the best way to start putting your body into ketosis and feeling the effects of keto compatibility!
                             </p>
                             <ul>
-                                <li>Réduire les sensations de faim</li>
-                                <li>Amélioration des performances mentales</li>
-                                <li>Augmenter les performances physiques</li>
-                                <li>Énergie plus durable</li>
-                                <li>Diminuer le temps nécessaire à votre corps pour entrer en cétose</li>
-                                <li>Aider à réduire les symptômes de la &ldquo;grippe faible en glucides&rdquo;</li>
+                                <li>Reduce feelings of hunger</li>
+                                <li>Improved mental performance</li>
+                                <li>Increase physical performance</li>
+                                <li>More sustainable energy</li>
+                                <li>Decrease the time it takes for your body to enter ketosis</li>
+                                <li>Help reduce symptoms of “low carb flu”</li>
                             </ul>
                             <br>
-                            <a href="checkout.html"
-                               class="order-btn nav-btn_color font-weight-bold px-4 my-0 py-2" role="button">COMMANDER
-                                MAINTENANT</a>
+                            <a href="{{ route('en.checkout.page') }}"
+                               class="order-btn nav-btn_color font-weight-bold px-4 my-0 py-2" role="button">ORDER NOW</a>
                         </div>
                     </article>
 
                 </div>
                 <div class="col-12 col-lg-4 offset-lg-2 d-none d-lg-block text-center align-self-center">
-                    <img class="ps-image img-fluid" src="images/keto-pills-shop.png" alt="Keto Flacon" style="max-height:350px;">
+                    <img class="ps-image img-fluid" src="images/keto-pills-shop.png" alt="Keto Bottle" style="max-height:350px;">
                 </div>
             </div>
         </div>
@@ -933,23 +877,17 @@
                         <div class="ps-header-holder">
                             <div class="row align-items-center">
                                 <header class="ps-header">
-                                    <h2 class="ps-header-title text-white  px-4">Qualité Garantie</h2>
+                                    <h2 class="ps-header-title text-white  px-4">GUARANTEED QUALITY</h2>
                                 </header>
                             </div>
                         </div>
 
                         <div class="ps-body text-white px-4">
                             <p>
-                                Tous les produits KETO sont fabriqués et emballés avec une énorme précaution aux
-                                États-Unis et subissent des procédures d'assurance qualité rigoureuses pour garantir la
-                                plus haute qualité. Nous nous engageons à fournir des nutraceutiques de pointe pour
-                                soutenir votre santé et votre bien-être optimaux.
+                                All KETO products are manufactured and packaged with enormous care in the USA and undergo rigorous quality assurance procedures to ensure the highest quality. We are dedicated to providing cutting edge nutraceuticals to support your optimal health and well-being.
                             </p>
                             <p>
-                                Tous les suppléments sont: &lpar;1&rpar; Fabriqués dans une installation enregistrée
-                                auprès de la FDA&dash;Certifiée BMP et CSI. &lpar;2&rpar; Sans charges, liants et
-                                ingrédients artificiels &lpar;3&rpar; Fait de plantes naturelles pures et d'ingrédients
-                                de première qualité.
+                                All supplements are: (1) Manufactured in an FDA registered facility - BMP and CSI certified. (2) Free from fillers, binders and artificial ingredients (3) Made with pure natural plants and premium ingredients.
                             </p>
                         </div>
                     </article>
@@ -973,11 +911,11 @@
                             <div class="row align-items-start">
                                 <div class="col-12 text-center">
                                     <img class="ps-image img-fluid" src="images/money_back_guarantee.svg"
-                                         alt="Garantie ou remboursé" style="max-width: 120px">
+                                         alt="Guarantee or refund" style="max-width: 120px">
                                 </div>
                                 <div class="col-12 text-center">
                                     <header class="ps-header text-black">
-                                        <h2 class="ps-header-title">GARANTIE DE REMBOURSEMENT DE 7 JOURS</h2>
+                                        <h2 class="ps-header-title">7 DAY MONEY BACK GUARANTEE</h2>
                                         <hr class="ps-header-title-line">
                                     </header>
                                 </div>
@@ -987,14 +925,10 @@
 
                         <div class="ps-body text-black px-4">
                             <p>
-                                Après des années de travail fastidieux pour essayer de trouver une perte de poids dans
-                                un supplément entièrement naturel, nous avons finalement réalisé ce rêve en créant KETO.
-                                Le domaine de notre nutritionniste et le groupe de perte de poids ont réussi à
-                                développer un produit que nous sommes fiers d'offrir.
+                                After years of painstaking work trying to find weight loss in an all-natural supplement, we finally made that dream come true by creating KETO. Our Nutritionist's Field and Weight Loss Group have been successful in developing a product that we are proud to offer.
                             </p>
                             <p>
-                                Nous préservons cette intégrité en offrant une garantie de remboursement de 7 jours si,
-                                pour une raison quelconque, vous n'êtes pas entièrement satisfait.
+                                We maintain this integrity by offering a 7-day money-back guarantee if, for any reason, you are not completely satisfied.
                             </p>
                         </div>
                     </article>
@@ -1011,26 +945,24 @@
                     <article>
                         <div class="ps-header-holder py-2 px-sm-3 px-2">
                             <header class="ps-header">
-                                <h2 class="ps-header-title">À PROPOS DE NOUS</h2>
+                                <h2 class="ps-header-title">ABOUT US</h2>
                             </header>
                         </div>
                         <div class="ps-body px-sm-3 px-2">
-                            <p>Nous sommes Keto.</p>
+                            <p>We are Keto.</p>
                             <p>
-                                C'est aussi simple que ça! Nous voulions trouver une solution simple pour aider à
-                                atteindre la cétose et nous avons trouvé un moyen simple de le faire! Quel que soit
-                                votre style de vie, KETO peut facilement en faire partie.
+                            It's that simple! We wanted to find an easy solution to help achieve ketosis and we found an easy way to do it! Whatever your lifestyle, KETO can easily be a part of it.
+
                             </p>
                             <p>
-                                Nous croyons en une vie saine, y compris une alimentation équilibrée et un style de vie
-                                actif. Que vous débutiez dans le régime cétogène ou non, notre équipe est là pour vous
-                                aider à atteindre vos objectifs!
+                            We believe in healthy living, including a balanced diet and an active lifestyle. Whether you are new to the ketogenic diet or not, our team is here to help you achieve your goals!
+
                             </p>
-                            <p><b>Questions? Commentaires?</b></p>
-                            <p>Nous aimons avoir de vos nouvelles!</p>
+                            <p><b>Questions? Comments?</b></p>
+                            <p>We love to hear from you!</p>
                             <p>
-                                Si vous avez besoin de nous contacter pour des questions, des commentaires, des
-                                témoignages ou une suggestion, veuillez envoyer un e-mail à <a href="mailto: ketoweightloss.shop@gmail.com" class="text-white">support@ketoweightloss.shop</a>.
+                                If you need to contact us with questions, comments, testimonials, or a suggestion, please send an email to
+                                <a href="mailto: ketoweightloss.shop@gmail.com" class="text-white">support@ketoweightloss.shop</a>.
                             </p>
                         </div>
                     </article>
@@ -1041,17 +973,16 @@
     <footer>
         <div class="container pt-5">
             <center>
-                <font size="1pt">La marques Keto Weight Loss UK sont des compléments alimentaires. À ce titre, ils ne se
-                    substituent en aucun cas à une alimentation saine, variée et équilibrée. Les informations et données
-                    diffusées sur le site proviennent de sources légitimes et valides et elles sont élaborées avec le
-                    plus grand soin et la plus grande précision. Cependant ces informations, données, affirmations et
-                    déclarations n’ont été approuvées par aucune agence gouvernementale ou toute autre autorité
-                    médicale. Les produits Keto Weight Loss UK, n’ont pas pour but de diagnostiquer, traiter, soigner, guérir,
-                    prévenir et/ou empêcher les maladies. Ils ne nécessitent aucune prescription médicale. Cependant,
-                    nous vous invitons à consulter impérativement votre médecin avant de commencer à consommer des
-                    compléments alimentaires, à suivre un régime, notamment sportif. En effet, chaque personne est
-                    unique, les résultats individuels peuvent varier et certaines contre-indications personnelles
-                    peuvent exister.
+                <font size="1pt">
+                    The Keto Weight Loss UK brands are food supplements. As such, they are in no way a substitute for a healthy, 
+                    varied and balanced diet. The information and data disseminated on the site come from legitimate and valid 
+                    sources and they are prepared with the greatest care and the greatest precision. However, this information, data,
+                    statements and statements have not been endorsed by any government agency or other medical authority. 
+                    Keto Weight Loss UK products are not intended to diagnose, treat, cure, cure, prevent and / 
+                    or prevent any disease. They do not require any medical prescription. 
+                    However, we invite you to consult your doctor before starting to consume food supplements, to follow a diet, 
+                    especially sports. Indeed, each person is unique, individual results may vary and certain personal 
+                    contraindications may exist.
                 </font></center>
             <br></br>
             <div class="row">
@@ -1069,17 +1000,17 @@
               d-none d-md-block">
 
                     <a href="#panel-how-keto-works" style="text-decoration: none;
-                color:black;font-size:14px;">Comment ca marche ?</a> <br>
+                color:black;font-size:14px;">How it works ?</a> <br>
                     <a href="#panel-customer-reviews" style="text-decoration: none;
-                color:black; font-size:14px;">Témoignages</a> <br>
+                color:black; font-size:14px;">Testimonials</a> <br>
                     <button class="btn
                      btn-link
                      p-0 border-0" style="text-decoration:none;color:black;
                      cursor:default;"></button>
                     <button type="button" class="btn
                      btn-link p-0 border-0" data-toggle="modal" data-target="#mentions-privacy-modal"
-                            data-modal-source="/privacy/ #page-content" data-modal-title="Mentions légales"
-                            style="text-decoration: none; color:black; font-size:14px;">Mentions légales
+                            data-modal-source="/privacy/ #page-content" data-modal-title="Legal Notice"
+                            style="text-decoration: none; color:black; font-size:14px;">Legal Notice
                     </button>
                     </span><br>
                 </div>
@@ -1099,7 +1030,7 @@
                                   data-target="#contact-privacy-modal" data-modal-source="/terms/ #page-content"
                                   data-modal-title="Terms
                                and Conditions" style="text-decoration: none; color:black;
-                               font-size:14px;">Nous Contacter</button>
+                               font-size:14px;">Contact us</button>
                                 <br>
 
                           <a class="btn btn-link p-0 border-0" onclick="window.open('/fr/Return-Refund-Policy');" style="text-decoration: none; color:black;
@@ -1120,11 +1051,11 @@
               d-block d-md-none">
 
                     <a href="#panel-how-keto-works" style="text-decoration: none;
-                color:black;font-size:14px;">Comment ca marche ?</a> |
+                color:black;font-size:14px;">How it works ?</a> |
                     <a href="#panel-customer-reviews" style="text-decoration: none;
-                color:black; font-size:14px;">Nos Avis</a> |
+                color:black; font-size:14px;">Our Reviews</a> |
                     <a href="#panel-what-is-bhb" style="text-decoration: none; color:black;
-                font-size:14px;">Ingrédients</a> |
+                font-size:14px;">Ingredients</a> |
                     <span class="text-nowrap">
                 <!-- <button type="button" class="btn btn-link p-0 border-0" data-toggle="modal"
                         data-target="#cgu-privacy-modal" data-modal-source="/terms/ #page-content" data-modal-title="Terms
@@ -1141,8 +1072,8 @@
                          cursor:default;"></button><br><button type="button" class="btn
                          btn-link p-0 border-0" data-toggle="modal" data-target="#mentions-privacy-modal"
                                                                data-modal-source="/privacy/ #page-content"
-                                                               data-modal-title="Mentions légales"
-                                                               style="text-decoration: none; color:black; font-size:14px;">Mentions légales</button>
+                                                               data-modal-title="Legal Notice"
+                                                               style="text-decoration: none; color:black; font-size:14px;">Legal Notice</button>
                 <br>
 
                 
@@ -1161,7 +1092,7 @@
 
                 </div>
                 <div class="col-12 col-sm-3 nav-b pt-2 pt-sm-0">
-                    <h3 class="mb-0" style="font-size:18px;">Suivez-Nous</h3>
+                    <h3 class="mb-0" style="font-size:18px;">Follow us</h3>
                     <span style="font-size:14px;">
                         <a href="#">Facebook</a>
                         <a href="#">Instagram</a>
@@ -1186,9 +1117,9 @@
 
             </div>
             <div class="modal-body">
-                <h3>« Contactez-nous »</h3>
-                <p>Vous avez une question à poser ? Nous sommes là pour répondre à toutes vos requêtes.<br/>Il vous
-                    suffit de nous contacter à l'email support@ketoweightloss.shop</p>
+                <h3>« Contact us »</h3>
+                <p>Got a question? We are here to answer all your queries.<br/>There you
+                    just contact us at email support@ketoweightloss.shop</p>
 
                 <p><b>Adresse:</b> 75 Av. des Champs-Élysées 92, 75008 Paris, France.</p>
 
@@ -1312,7 +1243,7 @@
                     l’intervention.
                     Le site web&nbsp;<a href="{{ config('app.url') }}">{{ config('app.url') }}</a>&nbsp;est mis à jour
                     régulièrement par <a href="{{ config('app.url') }}">{{ config('app.url') }}</a> responsable. De la même
-                    façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à
+                    façon, les Legal Notice peuvent être modifiées à tout moment : elles s’imposent néanmoins à
                     l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.
                 </p>
 
@@ -1945,7 +1876,7 @@
     <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 id="terms-privacy-modal-title" class="modal-title">Mentions Légales</h5>
+                <h5 id="terms-privacy-modal-title" class="modal-title">Legal Notice</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

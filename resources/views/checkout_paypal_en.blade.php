@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Checkout - Keto Produit de Perte de poids rapide en Tunisie</title>
+    <title>Checkout - Keto Fast Weight Loss Product</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
@@ -130,7 +130,7 @@
     <div class="row mt-2 py-2 cstm-2 free-shipping-text-container">
         <div class="col-12 text-left my-auto text-center pl-0" >
             <img src="/images/checkmark.png" width="30"/>
-            <span class="text-black approved approved-text"><b>Vous avez été approuvé pour la livraison gratuite</b></span>
+            <span class="text-black approved approved-text"><b>You have been approved for free shipping</b></span>
             <br>
         </div>
     </div>
@@ -140,23 +140,23 @@
     <div class="text-center" id="normal_products">
                                 
         <div id="product-79" data-product-id="1" data-offer-id="79" class="product">
-            <img src="{{ url('/images/banners/BANNERS 1 BOITE 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners_en/10.png') }}" class="img-fluid" />
         </div>
                 
         <div id="product-81" data-product-id="2" data-offer-id="81" class="product">
-            <img src="{{ url('/images/banners/BANNERS 2 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners_en/20.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-83" data-product-id="3" data-offer-id="83" class="product">
-            <img src="{{ url('/images/banners/BANNERS 3 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners_en/30.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-84" data-product-id="4" data-offer-id="84" class="product">
-            <img src="{{ url('/images/banners/BANNERS 4 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners_en/40.png') }}" class="img-fluid" />
         </div>
 
         <div id="product-86" data-product-id="6" data-offer-id="86" class="product">
-            <img src="{{ url('/images/banners/BANNERS 5 BOITES 1.png') }}" class="img-fluid" />
+            <img src="{{ url('/images/banners_en/BANNERS 5 BOITES 1.png') }}" class="img-fluid" />
         </div>
         
     </div>
@@ -166,7 +166,7 @@
 <section class="container">
     <div class="row px-2">
         <div id="formtop" class="col-12 border p-3 text-center">
-            <b class="text-black text-uppercase">Où expédions-nous votre KETO?</b>
+            <b class="text-black text-uppercase">WHERE DO WE SHIP YOUR KETO?</b>
         </div>
         <div id="formbottom" class="col-12 border p-3 pb-0 pb-md-3">
 
@@ -182,10 +182,10 @@
             <input type="hidden" name="products[]" id="product_id" value="" />
             <div class="form-row">
                 <div class="col-md-6 mb-2 pb-1">
-                    <input id="card_name" type='text' name='user_shipping_fname' data-rule-type='name' data-rule-required='true' data-rule-minlength='2' data-rule-maxlength='40' data-original-title='Invalid First Name' data-original-required='First Name is Required' class='form-control' value='' maxlength='40' placeholder='Prénom' tabindex='1' required />
+                    <input id="card_name" type='text' name='user_shipping_fname' data-rule-type='name' data-rule-required='true' data-rule-minlength='2' data-rule-maxlength='40' data-original-title='Invalid First Name' data-original-required='First Name is Required' class='form-control' value='' maxlength='40' placeholder='First Name' tabindex='1' required />
                 </div>
                 <div class="col-md-6 mb-2 pb-1">
-                    <input id="last_name"  type='text' name='user_shipping_lname' data-rule-type='name' data-rule-required='true' data-rule-minlength='2' data-rule-maxlength='40' data-original-title='Invalid Last Name' data-original-required='Last Name is Required' class='form-control' value='' maxlength='40' placeholder='Nom' tabindex='2' required />
+                    <input id="last_name"  type='text' name='user_shipping_lname' data-rule-type='name' data-rule-required='true' data-rule-minlength='2' data-rule-maxlength='40' data-original-title='Invalid Last Name' data-original-required='Last Name is Required' class='form-control' value='' maxlength='40' placeholder='Last Name' tabindex='2' required />
                 </div>
             </div>
             <div class="form-row">
@@ -451,7 +451,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mb-2 pb-1">
-                    <input type="text" class="form-control" name="address" id="validationCustom05" placeholder="Adresse" required  value="">
+                    <input type="text" class="form-control" name="address" id="validationCustom05" placeholder="Address" required  value="">
                     <div class="invalid-feedback">Veuillez fournir une adresse valide.</div>
                 </div>
                 <div class="col-md-12 mb-2 pb-1">
@@ -463,14 +463,14 @@
                 <div class="col-md-6 mb-2 pb-1">
                     <input type="tel" pattern=".*" name="phone_number"
                         class="form-control" id="validationCustom10"
-                        placeholder="Numéro de Téléphone" value=""
+                        placeholder="Phone number" value=""
                         required>
                     <div class="invalid-feedback">Veuillez fournir un numéro de téléphone valide.</div>
                 </div>
                 <div class="col-md-6 mb-2 pb-1">
                     <input type="email" pattern=".*@.*\..*" name="email_address"
                         class="form-control" id="validationCustom09"
-                        placeholder="Adresse Email" required value="">
+                        placeholder="Email address" required value="">
                     <div class="invalid-feedback">Veuillez fournir un e-mail valide.</div>
                 </div>
 
@@ -487,7 +487,7 @@
                             class="submit-btn cstm-12 btn btn-dark btn-lg btn-shop-now mt-2"
                             style="line-height:1;width:325px;"
                         >
-                            <strong style="font-family:'raleway';font-size:1.7rem">COMMANDER</strong><br>
+                            <strong style="font-family:'raleway';font-size:1.7rem">ORDER NOW</strong><br>
                             <img src="{{ url('/images/PAY_PAPYPAL_CC.png') }}">
                         </button>
 
@@ -496,7 +496,7 @@
                             <div class="checktest">
                                 <input type="checkbox" id="termes_conditions" class="vh" name="termes_conditions" checked>
                                 <label class="labelcheckbox" for="termes_conditions">
-                                    En cliquant sur le bouton ci-dessus, vous acceptez les termes et conditions et la politique de confidentialité de cette offre.
+                                    By clicking on the button above, you agree to the terms and conditions and the privacy policy of this offer.
                                 </label>
                             </div>
                   
@@ -516,7 +516,7 @@
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">PAIEMENT SÉCURISÉ</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">SECURE PAYMENT</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -657,7 +657,7 @@
 </script>
 
 <script
-    src="https://www.paypal.com/sdk/js?client-id=AYP9DA1rERDnwF7MpgJ_yxWF8rrTVEuHqkJT9-iU5Wru9OAdUlnBzKrbjpNMijxKxOkusNsf8dg9Usz_">
+    src="https://www.paypal.com/sdk/js?client-id=AYP9DA1rERDnwF7MpgJ_yxWF8rrTVEuHqkJT9-iU5Wru9OAdUlnBzKrbjpNMijxKxOkusNsf8dg9Usz_&locale=en_ES">
 </script>
 
 <script type="text/javascript">
@@ -668,7 +668,7 @@
 
         HoldOn.open({
             theme:"sk-circle",
-            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>En traitement...</h3><p style="margin:10px;"><strong>Veuillez patienter, cela peut prendre une minute ou deux.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Veuillez ne pas fermer ni actualiser. La fermeture de cette fenêtre entraînera une erreur ou un doublon!</div>',
+            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>Processing...</h3><p style="margin:10px;"><strong>Veuillez patienter, cela peut prendre une minute ou deux.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Veuillez ne pas fermer ni actualiser. La fermeture de cette fenêtre entraînera une erreur ou un doublon!</div>',
 
             backgroundColor:"#FFFFFF",
             textColor:"#000000"
@@ -741,9 +741,9 @@
             }
         }
         else{
-            $('#product-79 img').attr('src', '{!! url("/images/banners/BANNERS 1 BOITE 1.png") !!}');
+            $('#product-79 img').attr('src', '{!! url("/images/banners_en/10.png") !!}');
             if(offer_id == 79){
-                $(this).children('img').attr('src', '{!! url("/images/banners/BANNERS 1 BOITE 2.png")  !!}');
+                $(this).children('img').attr('src', '{!! url("/images/banners_en/11.png")  !!}');
             }
         }
 
@@ -773,9 +773,9 @@
             }
         }
         else{
-            $('#product-81 img').attr('src', '{{ url('/images/banners/BANNERS 2 BOITES 1.png') }}');
+            $('#product-81 img').attr('src', '{{ url('/images/banners_en/20.png') }}');
             if(offer_id == 81){
-                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 2 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners_en/21.png') }}');
             }
         }
 
@@ -807,9 +807,9 @@
             }
         }
         else{
-            $('#product-83 img').attr('src', '{{ url('/images/banners/BANNERS 3 BOITES 1.png') }}');
+            $('#product-83 img').attr('src', '{{ url('/images/banners_en/30.png') }}');
             if(offer_id == 83){
-                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 3 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners_en/31.png') }}');
             }
         }
 
@@ -823,9 +823,9 @@
             }
         }
         else{
-            $('#product-84 img').attr('src', '{{ url('/images/banners/BANNERS 4 BOITES 1.png') }}');
+            $('#product-84 img').attr('src', '{{ url('/images/banners_en/40.png') }}');
             if(offer_id == 84){
-                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 4 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners_en/41.png') }}');
             }
         }
 
@@ -839,9 +839,9 @@
             }
         }
         else{
-            $('#product-86 img').attr('src', '{{ url('/images/banners/BANNERS 5 BOITES 1.png') }}');
+            $('#product-86 img').attr('src', '{{ url('/images/banners_en/60.png') }}');
             if(offer_id == 86){
-                $(this).children('img').attr('src', '{{ url('/images/banners/BANNERS 5 BOITES 2.png') }}');
+                $(this).children('img').attr('src', '{{ url('/images/banners_en/61.png') }}');
             }
         }
 
@@ -900,7 +900,7 @@
 			
 			HoldOn.open({
             theme:"sk-circle",
-            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>En traitement...</h3><p style="margin:10px;"><strong>Veuillez patienter, cela peut prendre une minute ou deux.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Veuillez ne pas fermer ni actualiser. La fermeture de cette fenêtre entraînera une erreur ou un doublon!</div>',
+            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>En traitement...</h3><p style="margin:10px;"><strong>Please be patient, it may take a minute or two.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Please do not close or refresh. Closing this window will result in an error or a duplicate!</div>',
 
             backgroundColor:"#FFFFFF",
             textColor:"#000000"
@@ -943,18 +943,18 @@
                   .catch(function(error) {
                       // redirect to failed page if internal error occurs
 											HoldOn.close();
-                      window.location.href = '/pay-failed?reason=internalFailure';
+                      window.location.href = '/pay-failed?reason=internalFailure&locale=fr';
                   });
           }else{
 							HoldOn.close();
-              window.location.href = '/pay-failed?reason=failedToCapture';
+              window.location.href = '/pay-failed?reason=failedToCapture&locale=fr';
           }
       });
     },
 
     onCancel: function (data) {
 				HoldOn.close();
-        window.location.href = '/pay-failed?reason=userCancelled';
+        window.location.href = '/pay-failed?reason=userCancelled&locale=fr';
     }
 
 
