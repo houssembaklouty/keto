@@ -226,15 +226,6 @@
             </div>
         </a>
 
-        <div class="language">
-            <form action="" class="">
-                <select onchange="location = this.value;" class="form-control">
-                    <option lang="en" value="en">English</option>
-                    <option lang="fr" value="" selected>Français</option>
-                </select>
-            </form>
-        </div>
-
         <button id="page-nav-mobile-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#page-nav-navbar" aria-controls="page-nav-navbar" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -258,6 +249,16 @@
                 <li class="nav-item">
                     <a href="{{ route('fr.checkout.page') }}" class="nav-link text-uppercase">Acheter Maintenant &nbsp;
                         <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <div class="language-picker js-language-picker">
+                        <form action="" class="language-picker__form">
+                            <select onchange="location = this.value;" class="form-control">
+                                <option lang="en" value="en">English</option>
+                                <option lang="fr" value="" selected>Français</option>
+                            </select>
+                        </form>
+                    </div>
                 </li>
             </ul>
         </div>
