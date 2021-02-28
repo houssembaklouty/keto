@@ -227,7 +227,7 @@
         </a>
 
         <div class="language">
-            <form action="" class="form-group">
+            <form action="" class="">
                 <select onchange="location = this.value;" class="form-control">
                     <option lang="en" value="en">English</option>
                     <option lang="fr" value="" selected>Français</option>

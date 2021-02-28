@@ -224,8 +224,8 @@
             </div>
         </a>
 
-        <div class="language">
-            <form action="" class="form-group">
+        <div class="language-picker js-language-picker">
+            <form action="" class="language-picker__form">
                 <select onchange="location = this.value;" class="form-control">
                     <option lang="en" value="" selected>English</option>
                     <option lang="fr" value="fr">Français</option>
