@@ -84,7 +84,10 @@ class StripeController extends Controller
 
         $commandeRes = $this->createCommande($request, $product, $user->id);
 
-        $orderLink = config('app.url').'/order/'.$commandeRes->ref;
+        $getLocale = request()->session()->get('locale');
+        $getLocale = $getLocale == null ? 'en' : $getLocale; 
+
+        $orderLink = config('app.url').$getLocale.'/order/'.$commandeRes->ref;
         
         $user->update([
             'name' => $request->user_shipping_fname,

@@ -900,7 +900,7 @@
 			
 			HoldOn.open({
             theme:"sk-circle",
-            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>En traitement...</h3><p style="margin:10px;"><strong>Please be patient, it may take a minute or two.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Please do not close or refresh. Closing this window will result in an error or a duplicate!</div>',
+            message:'<style type="text/css">#holdon-overlay{opacity:.9;}#holdon-content{top:37%;}#holdon-message{top:44%;}</style><h3>Processing...</h3><p style="margin:10px;"><strong>Please be patient, it may take a minute or two.</strong></p><div style="display:flex;align-items:center;width:fit-content;margin:40px auto 0 auto;text-align:left;max-width:460px;text-decoration:underline;font-weight:bold;">Please do not close or refresh. Closing this window will result in an error or a duplicate!</div>',
 
             backgroundColor:"#FFFFFF",
             textColor:"#000000"
@@ -938,23 +938,23 @@
                   .then(function(response){
                       // redirect to the completed page if paid
 											HoldOn.close();
-                      window.location.href = '/order/'+orderRef;
+                      window.location.href = '/en/order/'+orderRef;
                   })
                   .catch(function(error) {
                       // redirect to failed page if internal error occurs
 											HoldOn.close();
-                      window.location.href = '/pay-failed?reason=internalFailure&locale=fr';
+                      window.location.href = '/pay-failed?reason=internalFailure&locale=en';
                   });
           }else{
 							HoldOn.close();
-              window.location.href = '/pay-failed?reason=failedToCapture&locale=fr';
+              window.location.href = '/pay-failed?reason=failedToCapture&locale=en';
           }
       });
     },
 
     onCancel: function (data) {
 				HoldOn.close();
-        window.location.href = '/pay-failed?reason=userCancelled&locale=fr';
+        window.location.href = '/pay-failed?reason=userCancelled&locale=en';
     }
 
 

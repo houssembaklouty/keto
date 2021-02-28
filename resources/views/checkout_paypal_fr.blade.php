@@ -938,23 +938,23 @@
                   .then(function(response){
                       // redirect to the completed page if paid
 											HoldOn.close();
-                      window.location.href = '/order/'+orderRef;
+                      window.location.href = '/fr/order/'+orderRef;
                   })
                   .catch(function(error) {
                       // redirect to failed page if internal error occurs
 											HoldOn.close();
-                      window.location.href = '/pay-failed?reason=internalFailure&locale=en';
+                      window.location.href = '/pay-failed?reason=internalFailure&locale=fr';
                   });
           }else{
 							HoldOn.close();
-              window.location.href = '/pay-failed?reason=failedToCapture&locale=en';
+              window.location.href = '/pay-failed?reason=failedToCapture&locale=fr';
           }
       });
     },
 
     onCancel: function (data) {
 				HoldOn.close();
-        window.location.href = '/pay-failed?reason=userCancelled&locale=en';
+        window.location.href = '/pay-failed?reason=userCancelled&locale=fr';
     }
 
 

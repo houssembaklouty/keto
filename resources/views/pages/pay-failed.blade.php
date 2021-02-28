@@ -71,7 +71,7 @@
                     @if(\Request::get('locale') == 'fr')  
                     <td class="m_5327504558924647655btn_td" bgcolor="#000000" style="font-family:Arial;font-size:18px;color:#ffffff;padding-top:16px;padding-right:12px;padding-bottom:16px;padding-left:12px;text-align:center;text-decoration:none;border-radius:6px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-word;word-break:normal;font-weight:bold;font-style:normal;line-height:17px;border-top-width:12px;display:inline-block;padding: 1em 2.4em;">
                         <a href="{{ route('fr.checkout.page') }}" rel="noopener noreferrer" style="color:#ffffff;text-decoration:none" >
-                            Lelancer la commande
+                            Relancer la commande
                         </a>
                     </td>
                     @else

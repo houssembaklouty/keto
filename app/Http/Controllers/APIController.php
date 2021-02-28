@@ -59,7 +59,10 @@ class APIController extends Controller
             return response()->json(['data' => $stripeResponse['message'], 404]);
         }
 
-        $orderLink = config('app.url').'/order/'.$Commande->ref;
+        $getLocale = request()->session()->get('locale');
+        $getLocale = $getLocale == null ? 'en' : $getLocale; 
+
+        $orderLink = config('app.url').$getLocale.'/order/'.$Commande->ref;
 
         $address = $request->address;
         $country = $request->country;
