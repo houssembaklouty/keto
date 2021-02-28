@@ -657,7 +657,7 @@
 </script>
 
 <script
-    src="https://www.paypal.com/sdk/js?client-id=AYP9DA1rERDnwF7MpgJ_yxWF8rrTVEuHqkJT9-iU5Wru9OAdUlnBzKrbjpNMijxKxOkusNsf8dg9Usz_&locale=en_ES">
+    src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_CLIENT') }}&locale=en_ES">
 </script>
 
 <script type="text/javascript">
