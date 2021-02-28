@@ -202,8 +202,8 @@
             <img src="/images/logo.png" alt="KETO Weight Loss US Shop logo" width="70px"></a>
         <a id="order_now" href="{{ route('en.checkout.page') }}" class="order-btn
 		font-weight-bold px-4 flex-column" role="button" style="display:none;width:160px;">
-            <div style="height:33px;" class="nav-btn_color text-center">COMMANDER MAINTENANT</div>
-            <div class="text-center shipping-text">LIVRAISON DANS LE MONDE ENTIER</div>
+            <div style="height:33px;" class="nav-btn_color text-center">ORDER NOW</div>
+            <div class="text-center shipping-text">DELIVERY WORLDWIDE</div>
         </a>
 
         <a id="free_shipping" href="#" class="order-btn font-weight-bold px-4 d-flex flex-column" role="button"
@@ -402,7 +402,7 @@
                         INCREASE THE ENERGY.
                     </h2>
                     <a href="{{ route('en.checkout.page') }}" class="btn btn-dark btn-lg btn-shop-now text-uppercase"
-                       role="button">Commander &gt;&gt;</a>
+                       role="button">ORDER NOW &gt;&gt;</a>
                     <p class="mh-money-back-guarantee-label mb-0">(7 Days Money Back Guarantee!) </p>
 
                     <div class="mh-icons mt-md-4 mt-lg-5">
